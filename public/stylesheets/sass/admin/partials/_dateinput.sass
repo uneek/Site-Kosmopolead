@@ -1,11 +1,11 @@
 input.date
-  background: white image_url('admin/calendar_down.gif') right no-repeat
+  background: white url(../../images/admin/calendar_down.gif) right no-repeat
   padding-right: 26px
   width: 11em
 
 .calendar_popup
   +box-shadow
-  +border-radius
+  +round-corners
   z-index: 1000
   border: 1px solid #b2b2b2
   background-color: white
@@ -13,7 +13,7 @@ input.date
   line-height: 140%!important
   
   a
-    +border-radius
+    +round-corners
   
   table.calendar
     font-size: 90%
@@ -37,7 +37,7 @@ input.date
       padding: 3px !important
       margin: 0
       &.today
-        +border-radius
+        +round-corners
         background-color: #e5e5e5
       &.today a
         background-color: white
@@ -48,7 +48,7 @@ input.date
     a
       color: black
       display: block
-      font-family: $base-font-family
+      font-family: "Lucida Grande", Tahoma, sans-serif
       text-decoration: none
       text-align: center
       width: 2.25em

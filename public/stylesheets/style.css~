@@ -1,0 +1,277 @@
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  background-color : white;
+  color : black;
+  padding : 0px;
+}
+
+/* Body parts */
+
+#page{
+  background-color : transparent;
+  color : white;
+  margin-top : -24px;
+  margin-bottom : 0px;
+  margin-left : 135px;
+  width : 960px;
+  float : left;
+}
+
+#sider{
+  background-color : transparent;
+  width : 100px;
+  margin-top : 0px;
+  margin-left : 0px;
+  float : left;
+  padding : 0px;
+  height : 300px;
+}
+
+
+	/* Page parts */
+
+#header {
+  color : white;
+  margin-top : 0px;
+  margin-right : 0px;
+  margin-left : 0px;
+  text-align : right;
+  clear : left;
+  height : 160px;
+  background-image : url('../images/bandeau.png');
+}
+
+#content {
+  margin-left : 0px;
+  margin-right : 0px;
+  background-color : white;
+  color : black;
+}
+
+#footer {
+  background-image : url('../images/footer.png');
+  color : white;
+  margin-left : 0px;
+  margin-right : 0px;
+  margin-bottom : 0px;
+  padding-top : 0px;
+  padding-bottom : 0px;
+  padding-left : 100px;
+  padding-right : 100px;
+  height : 212px;
+  clear : left;
+}
+
+		/* Header parts */
+
+			/* Menu parts */
+
+.menu{
+	margin-top : 115px;
+	margin-bottom : 5px;
+	margin-right : 50px;
+	height : 40px;
+	float : right;
+}
+
+.menu_ul{
+  list-style-type : none;
+}
+
+.menu_ul li{
+  display : inline;
+  margin-left : 10px;
+}
+
+.menu_ul a:link{
+  color : white;
+  text-decoration : none;
+}
+
+.menu_ul a:visited{
+  color : inherit;
+  text-decoration : none;
+}
+
+.menu_ul a:hover{
+  color : lightblue;
+  text-decoration : underline;
+}
+
+.menu_ul a:active{
+  color : white;
+  text-decoration : none;
+}
+
+.current{
+  color : lightblue;
+  text-decoration : underline;
+}
+
+.parent_of_current{
+  color : lightblue;
+  text-decoration : underline;
+}
+
+		/* Content parts */
+
+.central{
+  width : 900px;
+  padding : 10px;
+  margin-bottom : 5px;
+  background-image : url('../images/central_bkg.png');
+  height : 210px;
+  float : left;
+}
+
+.central_left{
+  background-image : url('../images/central_left.png');
+  width : 20px;
+  height : 210px;
+  float : left;
+}
+
+.central_right{
+  background-image : url('../images/central_right.png');
+  width : 20px;
+  height : 210px;
+  float : left;
+}
+
+.central_vsep{
+  margin-top : 5px;
+  margin-right : 0px;
+  margin-left : 0px;
+  background-image : url('../images/central_sep.png');
+  width : 2px;
+  height : 191px;
+  float : left;
+}
+
+.temoin{
+  margin-left : 0px;
+  margin-top : 15px;
+  width : 74%;
+  margin-right : 0px;
+  height : 150px;
+  float : left;
+}
+
+.join{
+  font-size : 14px;
+  margin-right : 0px;
+  margin-top : 15px;
+  width : 23%;
+  margin-left : 0px;
+  padding-left : 21px;
+  text-align : center;
+  padding-right : 0px;
+  height : 150px;
+  float : left;
+}
+
+.join_button{
+  background-color : lightblue;
+  border : outset 2px lightblue;
+  color : white;
+  text-transform : capitalize;
+  margin-left : auto;
+  margin-right : auto;
+}
+
+.imagedbox{
+  float : left;
+  width : 32.25%;
+  margin : 3px;
+  border : solid 2px lightgrey;
+}
+		
+		/* Footer parts */
+
+.footer_div {
+  margin-top : 0px;
+  margin-bottom : 0px;
+  margin-left : auto;
+  margin-right : auto;
+  background-color : transparent;
+  color : white;
+  padding-right : 5px;
+  float : left;
+  height : 100%;
+  width : 32%;
+}
+
+.footer_div ul {
+  list-style-type : none;
+}
+
+.footer_div a:link {color:white; text-decoration:none}
+.footer_div a:visited {color:white; text-decoration:none}
+.footer_div a:hover {color:lightblue; text-decoration:none}
+.footer_div a:active {color:white; text-decoration:none}
+
+.vsep{
+  background-image : url('../images/footer_sep.png');
+  width : 2px;
+  height : 212px;
+  float : left;
+}
+
+.sitemap_div{
+  margin : 0px;
+}
+
+.links_div{
+}
+
+.infos_div{
+  margin: 0px;
+  text-align : right;
+}
+
+ul.sitemap{
+  font-size : 9px;
+  padding-left : 5px;
+}
+
+li.sitemap{
+  font-size : 10px;
+  margin-left : 0px;
+  margin-bottom : 3px;
+}
+
+li.childsitemap{
+  font-size : 9px;
+  margin-bottom : 0px;
+}
+
+
+	/* Sider parts */
+
+#sider ul{
+  margin : 0px;
+  padding : 0px;
+  list-style-type : none;
+}
+
+#sider li{
+  margin : 0px;
+  height : 50px;
+}
+
+
+/* Non-specific */
+
+.right_aligned{
+  text-align : right;
+}
+
+hr{
+  margin-bottom: 0px;
+  margin-top : 0px;
+}
+
+.hbar{
+  width : 100%;
+  clear : left;
+}

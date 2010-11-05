@@ -12,9 +12,8 @@ Object.extend(String.prototype, {
     return parseInt(this);
   },
   
-  toSlug: function(allow_periods) {
-    replacement_regex = allow_periods ? /[\s:;=+]+/g : /[\s\.:;=+]+/g
-    return this.strip().downcase().replace(/[^-a-z0-9~\s\.:;+=_]/g, '').replace(replacement_regex, '-');
+  toSlug: function() {
+    return this.strip().downcase().replace(/[^-a-z0-9~\s\.:;+=_]/g, '').replace(/[\s\.:;=+]+/g, '-');
   }
 });
 

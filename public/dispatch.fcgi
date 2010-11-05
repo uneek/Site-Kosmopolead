@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/opt/ruby-enterprise-1.8.7-2010.02/bin/ruby
 #
 # You may specify the path to the FastCGI crash log (a log of unhandled
 # exceptions which forced the FastCGI instance to exit, great for debugging)

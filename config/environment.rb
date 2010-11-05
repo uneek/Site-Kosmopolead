@@ -20,18 +20,17 @@ Radiant::Initializer.run do |config|
   # config.extensions = [ :all ]
   
   # By default, only English translations are loaded. Remove any of these from
-  # the list below if you'd like to provide any of the additional options
+  # the list below if you'd like to provide any of the supported languages
   config.extensions -= [:dutch_language_pack, :french_language_pack, :german_language_pack,
-                        :italian_language_pack, :japanese_language_pack, :russian_language_pack,
-                        :debug]
+                        :italian_language_pack, :japanese_language_pack, :russian_language_pack]
 
   # Your secret key for verifying cookie session data integrity.
   # If you change this key, all old sessions will become invalid!
   # Make sure the secret is at least 30 characters and all random,
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :key => '_radiant_session',
-    :secret      => 'asdfqwerfxcoivswqenadfasdfqewpfioutyqwel'
+    :key => '_kosmopolead_session',
+    :secret      => '9136ebe67ff1a22d20195baf30d730b0872c1cc5'
   }
 
   # Comment out this line if you want to turn off all caching, or
@@ -62,11 +61,6 @@ Radiant::Initializer.run do |config|
 
   # Activate observers that should always be running
   config.active_record.observers = :user_action_observer
-  
-  # The internationalization framework can be changed to have another default locale (standard is :en) or more load paths.
-  # All files from config/locales/*.rb,yml are added automatically.
-  # config.i18n.load_path << Dir[File.join(RAILS_ROOT, 'my', 'locales', '*.{rb,yml}')]
-  # config.i18n.default_locale = :'en'
 
   # Make Active Record use UTC-base instead of local time
   config.time_zone = 'UTC'
@@ -80,13 +74,12 @@ Radiant::Initializer.run do |config|
     end
   end
 
+  config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
+
   config.after_initialize do
     # Add new inflection rules using the following format:
     ActiveSupport::Inflector.inflections do |inflect|
       inflect.uncountable 'config'
     end
   end
-  
-  config.gem 'compass', :version => '~> 0.10.5'
-  config.gem 'will_paginate', :version => '~> 2.3.11'
 end
