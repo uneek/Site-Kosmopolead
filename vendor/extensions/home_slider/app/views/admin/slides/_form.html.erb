@@ -1,0 +1,29 @@
+<% form_for [:admin, @slide], :html => { :multipart => true } do |f|%>
+  <div class="form-area">
+    <div  id="slide_form_area">
+      <p class="title">
+        <label for="slide_title">Title</label>
+        <%= f.text_field "title", :class => 'textbox', :maxlength => 255 %>
+      </p>
+
+      <p class="url">
+        <label for="slide_url">URL</label>
+        <%= f.text_field "url", :class => 'textbox', :maxlength => 255 %>
+      </p>
+
+      <p class="image">
+        <label for="slide_image">Image</label>
+        <%= f.file_field "image", :class => 'textbox' %>
+      </p>
+
+       <span class="clear">&nbsp;</span>
+    </div>
+  </div>
+
+  <p class="buttons">
+    <%= save_model_button(@slide) %>
+    <%= save_model_and_continue_editing_button(@slide) %>
+    or
+    <%= link_to "Cancel", {:action => :index} %>
+  </p>
+<% end %>

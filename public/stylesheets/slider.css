@@ -25,8 +25,8 @@
 		height:77px;
 		position:absolute;
 		left:15px;
-		top:232px;
-		z-index:1000;
+		top:272px;
+		z-index:2;
 		}	
 	#nextBtn, #slider1next{ 
 		left:660px;
@@ -37,10 +37,10 @@
 		position:relative;
 		width:30px;
 		height:77px;
-		background:url('../images/btn_prev.gif') no-repeat 0 0;	
+		background:url('../images/fleches_slide.png') 0 0px;	
 		}	
 	#nextBtn a, #slider1next a{ 
-		background:url('../images/btn_next.gif') no-repeat 0 0;	
+		background:url('../images/fleches_slide.png') 30px 0px;	
 		}	
 		
 	/* numeric controls */	

@@ -35,6 +35,12 @@ ActiveRecord::Schema.define(:version => 20091003095744) do
     t.integer  "lock_version",                 :default => 0
   end
 
+  create_table "page_attachments", :force => true do |t|
+    t.integer "asset_id"
+    t.integer "page_id"
+    t.integer "position"
+  end
+
   create_table "page_parts", :force => true do |t|
     t.string  "name",      :limit => 100
     t.string  "filter_id", :limit => 25
@@ -61,6 +67,7 @@ ActiveRecord::Schema.define(:version => 20091003095744) do
     t.integer  "lock_version",                 :default => 0
     t.string   "description"
     t.string   "keywords"
+    t.integer  "position"
   end
 
   add_index "pages", ["class_name"], :name => "pages_class_name"
@@ -76,6 +83,17 @@ ActiveRecord::Schema.define(:version => 20091003095744) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "slides", :force => true do |t|
+    t.string   "title"
+    t.string   "url"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "snippets", :force => true do |t|
     t.string   "name",          :limit => 100, :default => "", :null => false

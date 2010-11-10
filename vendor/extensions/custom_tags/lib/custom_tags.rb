@@ -12,11 +12,11 @@ module CustomTags
       if (!child.class_name.eql? "FileNotFoundPage" and !child.part("no-sitemap"))
         r << %{<li class="sitemap"><a href="#{child.url}">#{child.title}</a>}
         if child.part("tabs")
-           r<< " : "
+           r<< " : | "
            i = 1
            for tab in child.parts
              if (tab.name != "body" && tab.name != "tabs")
-              r<< %{<a class="childsitemap" href="#" id="tab-#{child.slug}-#{i}" rel="#{child.url}">#{tab.name}</a> }
+              r<< %{<a class="childsitemap" href="#" id="tab-#{child.slug}-#{i}" rel="#{child.url}">#{tab.name}</a> | }
               i += 1
              end
            end

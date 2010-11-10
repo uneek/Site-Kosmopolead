@@ -1,24 +1,32 @@
-body {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+root{
+  display:block;
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size : 13px;
   background-color : white;
   color : black;
   padding : 0px;
+  margin : 0px;
+  border : 0px;
+  width:100%;
 }
 
 /* Body parts */
 
 #page{
   position : relative;
-  background-color : transparent;
+  background-color : white;
   color : white;
-  margin-top : -24px;
+  margin-top : 0px;
   margin-bottom : 0px;
   margin-left : 150px;
   width : 960px;
   float : left;
-  box-shadow : 1px -10px 15px #555;
-  -moz-box-shadow : 1px -10px 15px #555;
-  -webkit-box-shadow : 1px -10px 15px #555;
+  box-shadow : 1px -20px 15px #555;
+  -moz-box-shadow : 1px -20px 15px #555;
+  -webkit-box-shadow : 1px -20px 15px #555;
   filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=180, Strength=20);
   z-index : 1;
 }
@@ -45,8 +53,8 @@ body {
   margin-left : 0px;
   text-align : right;
   clear : left;
-  height : 160px;
-  background-image : url('../images/bandeau.png');
+  height : 200px;
+  background : url('../images/bandeau.png') no-repeat #382d24;
 }
 
 #content {
@@ -54,6 +62,7 @@ body {
   margin-right : 0px;
   background-color : white;
   color : black;
+  min-height : 390px;
 }
 
 #footer {
@@ -61,10 +70,10 @@ body {
   color : white;
   margin-left : 0px;
   margin-right : 0px;
-  margin-bottom : 0px;
+  margin-bottom : -20px;
   padding-top : 0px;
   padding-bottom : 0px;
-  padding-left : 100px;
+  padding-left : 125px;
   padding-right : 100px;
   height : 212px;
   clear : left;
@@ -75,11 +84,12 @@ body {
 			/* Menu parts */
 
 .menu{
-	margin-top : 117px;
-	margin-right : 50px;
+	margin-top : 157px;
+	margin-right : 10px;
 	height : 40px;
 	float : right;
         font-weight : bold;
+	font-size: 14px;
 }
 
 .menu_ul{
@@ -87,10 +97,40 @@ body {
   margin-right : 5px;
 }
 
+#ul_vous-etes{
+	position : absolute;
+	left : 687px;
+	top : 200px;
+        padding-left : 5px;
+	padding-right : 5px;
+	background-color : #382d24;
+        border : solid 1px #00cfff;
+	z-index : 3;
+	display : none;
+	text-align : left;
+	font-size : 12px;
+}
+
+#ul_vous-etes li{
+	color : white;
+        padding : 0 1px 0 1px;
+	margin : 3px;
+	display : block;
+        border : none;
+}
+
+#ul_vous-etes li:hover{
+	color : #00cfff;
+}
+
+#ul_vous-etes li.current{
+	color : #00cfff;
+}
+
 .menu_ul li{
   display : inline;
   margin-left : 15px;
-  padding-bottom : 4px;
+  padding-bottom : 7px;
 }
 
 .menu_ul a:link{
@@ -104,8 +144,8 @@ body {
 }
 
 .menu_ul li:hover{
-  color : deepskyblue;
-  border-bottom : deepskyblue solid 3px;
+  color : #00cfff;
+  border-bottom : #00cfff solid 3px;
 }
 
 .menu_ul a:active{
@@ -114,20 +154,24 @@ body {
 }
 
 .current{
-  color : deepskyblue;
-  border-bottom : deepskyblue solid 3px;
+  color : #00cfff;
+  border-bottom : #00cfff solid 3px;
 }
 
 .parent_of_current{
-  color : deepskyblue;
-  border-bottom : deepskyblue solid 3px;
+  color : #00cfff;
+  border-bottom : #00cfff solid 3px;
 }
 
 		/* Content parts */
 
 .para{
   margin-left : 50px;
-  width : 75%;
+  width : 83%;
+}
+
+h3{
+  font-size : 13px;
 }
 
 .central{
@@ -199,6 +243,10 @@ body {
   background: url('../images/bouton_inscrire.png') 0 30px;
   margin-left : auto;
   margin-right : auto;
+}
+
+.block_link{
+  color : inherit;
 }
 
 .imagedbox{
@@ -280,6 +328,7 @@ body {
   float : left;
   height : 100%;
   width : 32%;
+  font-size : 10px;
 }
 
 .footer_div ul {
@@ -288,7 +337,7 @@ body {
 
 .footer_div a:link {color:white; text-decoration:none}
 .footer_div a:visited {color:white; text-decoration:none}
-.footer_div a:hover {color:deepskyblue; text-decoration:none}
+.footer_div a:hover {color:#00cfff; text-decoration:none}
 .footer_div a:active {color:white; text-decoration:none}
 
 .vsep{
@@ -299,12 +348,15 @@ body {
 }
 
 .sitemap_div{
-  margin : 0px;
+  width : 180px;
+}
+
+.links_div{
+  width : 245px;
 }
 
 .links_div li{
-  font-size : 12px;
-  margin-bottom : 15px;
+  margin-bottom : 5px;
 }
 
 .links_div img{
@@ -314,20 +366,20 @@ body {
 }
 
 .infos_div{
-  margin: 0px;
   text-align : right;
-  font-size : 12px;
+  font-size : 10px;
+  width : 250px;
+  padding-right : 20px;
 }
 
 ul.sitemap{
-  font-size : 10px;
+  font-size : 9px;
   padding-left : 5px;
 }
 
 li.sitemap{
-  font-size : 12px;
   margin-left : 0px;
-  margin-bottom : 3px;
+  margin-bottom : 10px;
 }
 
 a.childsitemap{
@@ -350,6 +402,10 @@ a.childsitemap{
   height : 80px;
 }
 
+#sider li:hover{
+  margin-left : 10px;
+}
+
 #sider img{
   border-style : none;
 }
@@ -360,12 +416,19 @@ a.childsitemap{
   text-align : right;
 }
 
-hr{
-  margin-bottom: 0px;
-  margin-top : 0px;
+.justified_rtl{
+  text-align : justify;
+  direction : rtl;
+}
+
+.mini_font{
+  font-size : 8px;
 }
 
 .hbar{
   width : 100%;
   clear : both;
+  margin : 0px;
+  padding : 0px;
+  border : 0px;
 }

@@ -31,3 +31,9 @@
 [submodule "vendor/extensions/markdown_filter"]
 	path = vendor/extensions/markdown_filter
 	url = git://github.com/radiant/radiant-markdown_filter-extension.git
+[submodule "vendor/extensions/paperclipped"]
+	path = vendor/extensions/paperclipped
+	url = git://github.com/kbingman/paperclipped.git
+[submodule "vendor/extensions/fckeditor"]
+	path = vendor/extensions/fckeditor
+	url = git://github.com/djcp/radiant-fckeditor.git
