@@ -2,7 +2,7 @@ root{
   display:block;
 }
 
-html, body {
+html {
   font-family: Arial, Helvetica, sans-serif;
   font-size : 13px;
   background-color : white;
@@ -11,6 +11,20 @@ html, body {
   margin : 0px;
   border : 0px;
   width:100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size : 13px;
+  background-color : white;
+  color : black;
+  padding : 0px;
+  margin-left : auto;
+  margin-right : auto;
+  margin-top : 0px;
+  margin-bottom : 0px;
+  border : none;
+  width: 1260px;
 }
 
 /* Body parts */
@@ -84,7 +98,7 @@ html, body {
 			/* Menu parts */
 
 .menu{
-	margin-top : 160px;
+	margin-top : 7px;
 	margin-right : 10px;
 	height : 40px;
 	float : right;
@@ -97,13 +111,19 @@ html, body {
   margin-right : 5px;
 }
 
+.logo{	width : 540px;
+	height : 150px;
+	margin-left : 30px;
+	margin-bottom : 0;
+}
+
 #accordion{
 	margin-bottom : 5px;
 }
 
 #ul_vous-etes{
 	position : absolute;
-	left : 587px;
+	margin-left : 85px;
 	top : 200px;
         padding-left : 5px;
 	padding-right : 5px;
@@ -113,6 +133,7 @@ html, body {
 	display : none;
 	text-align : left;
 	font-size : 12px;
+	width : 100px;
 }
 
 #ul_vous-etes li{
@@ -270,7 +291,7 @@ h3{
  padding-right : 5px;
  font-size : 80%;
  text-align : justify;
- line-height : 110%;
+ line-height : 150%;
 }
 
 .image_entreprises{
