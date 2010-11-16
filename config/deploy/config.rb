@@ -69,10 +69,7 @@ namespace :deploy do
     run "cd #{current_path}; rake db:migrate:extensions RAILS_ENV=#{rails_env}"
 
 
-    #Thinking Sphinx
-    run "cd #{current_path}; rake ts:stop RAILS_ENV=#{rails_env}"
-    run "cd #{current_path}; rake ts:index RAILS_ENV=#{rails_env}"
-    run "cd #{current_path}; rake ts:start RAILS_ENV=#{rails_env}"
+    
 
 
 
