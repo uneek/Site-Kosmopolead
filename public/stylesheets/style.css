@@ -84,7 +84,7 @@ html, body {
 			/* Menu parts */
 
 .menu{
-	margin-top : 157px;
+	margin-top : 160px;
 	margin-right : 10px;
 	height : 40px;
 	float : right;
@@ -97,9 +97,13 @@ html, body {
   margin-right : 5px;
 }
 
+#accordion{
+	margin-bottom : 5px;
+}
+
 #ul_vous-etes{
 	position : absolute;
-	left : 687px;
+	left : 587px;
 	top : 200px;
         padding-left : 5px;
 	padding-right : 5px;
@@ -208,11 +212,11 @@ h3{
 }
 
 .temoin{
-  margin-left : 15px;
-  margin-top : 10px;
-  width : 72.2%;
+  margin-left : -20px;
+  margin-top : 5px;
+  width : 76%;
   margin-right : 0px;
-  height : 180px;
+  height : 191px;
   float : left;
 }
 
@@ -411,6 +415,17 @@ a.childsitemap{
 }
 
 /* Non-specific */
+
+h2{
+ margin-left : 10px;
+ color : #382D24 ;
+ background-color : transparent;
+ font-size : 18px;
+}
+
+h2 img{
+ vertical-align : middle;
+}
 
 .right_aligned{
   text-align : right;

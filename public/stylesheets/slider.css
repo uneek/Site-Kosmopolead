@@ -14,8 +14,8 @@
 			define width and height of list item (slide)
 			entire slider area will adjust according to the parameters provided here
 		*/ 
-		width:615px;
-		height:180px;
+		width:684px;
+		height:191px;
 		overflow:hidden; 
 		}	
 	#prevBtn, #nextBtn,
@@ -37,10 +37,10 @@
 		position:relative;
 		width:30px;
 		height:77px;
-		background:url('../images/fleches_slide.png') 0 0px;	
+		background:url('../images/fleches_slide_02.png') 0 0px;	
 		}	
 	#nextBtn a, #slider1next a{ 
-		background:url('../images/fleches_slide.png') 30px 0px;	
+		background:url('../images/fleches_slide_02.png') 30px 0px;	
 		}	
 		
 	/* numeric controls */	

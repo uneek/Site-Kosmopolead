@@ -1,0 +1,47 @@
+$(function() {
+	/* variables */
+	var t;
+	
+	$("#accordion").accordion();
+              
+	$("#slider").easySlider({
+		auto: true,
+		continuous: true,
+		pause : 4000 
+	});
+
+	// run the currently selected effect
+	function runEffect() {
+			
+		// most effect types need no options passed by default
+		var options = {};
+
+		// run the effect
+		//$("#ul_vous-etes").stop();
+		//$( "#ul_vous-etes" ).show( "blind", options, 2000 );
+		clearTimeout(t);
+		$("#ul_vous-etes").show();
+                         
+	};
+	
+	function stopEffect() {
+			
+		// most effect types need no options passed by default
+		var options = {};
+
+		// stop the effect
+		//$( "#ul_vous-etes" ).hide( "blind", options, 2000 );
+                t = setTimeout('$( "#ul_vous-etes" ).hide();', 2000);
+	};
+		
+	// set effect from select menu value
+	$( "#nav_vous-etes" ).hover(function() {
+			runEffect();
+			return false;
+		},
+                function() {
+       			stopEffect();
+			return false;
+		}
+	);
+});
