@@ -203,13 +203,14 @@ a.logo_link{
 
 .para{
   margin-left : 50px;
-  width : 83%;
+  margin-right : 50px;
+  /*width : 83%;*/
 }
 
 h3{
   font-size : 13px;
 }
-
+			/* Page d'accueil */
 .central{
   width : 900px;
   padding : 10px;
@@ -280,6 +281,73 @@ h3{
   margin-left : auto;
   margin-right : auto;
 }
+
+			/* Page 'L'entreprise' */
+
+.membre_equipe{
+	width : 140px;
+	padding : 0;
+	border : none;
+	margin-left : 37px;
+	margin-right : 37px;
+	margin-bottom : 20px;
+	margin-top : 20px;
+	float : left;
+}
+
+.membre_equipe .cadre{
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 0;
+	margin-bottom : 0;
+	width : 80px;
+	height : 85px;
+	padding : 5px;
+	border : none;
+	background : url('/images/cadre.png') center center;
+}
+
+.membre_equipe .cadre img{
+	margin : 0;
+	padding-left : 3px;
+	padding-top : 1px;
+	border : none;
+}
+
+.membre_equipe p{
+	text-align : center;
+	margin-top : 5px;
+	margin-bottom : 10px;
+	margin-left : 0px;
+	margin-right : 0px;
+}
+
+.membre_equipe p:first-line{
+	font-size : 100%;
+	font-weight : bold;
+} 
+
+.membre_equipe a{
+	width : 140px;
+	height : 40px;
+	background : url('/images/profil_button.png') 0 -40px no-repeat;
+	display : block;
+	margin : 0;
+	padding : 0;
+	border : 0
+}
+
+.membre_equipe a:hover{
+	width : 140px;
+	height : 40px;
+	background : url('/images/profil_button.png') 0 0 no-repeat;
+	display : block;
+	margin : 0;
+	padding : 0;
+	border : 0
+}
+
+			/* Autres */
 
 .block_link{
   color : inherit;

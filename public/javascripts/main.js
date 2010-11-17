@@ -3,7 +3,8 @@ $(function() {
 	var t;
 	
 	$("#accordion").accordion({
-		collapsible : true
+		collapsible : true,
+		active : false
 	});
 
 	$('#accordion').bind('accordionchange', function(event,ui) {
