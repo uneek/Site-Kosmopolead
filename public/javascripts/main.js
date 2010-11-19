@@ -1,7 +1,9 @@
 $(function() {
 	/* variables */
 	var t;
-	
+
+	$("#tabs_infos").tabs();	
+
 	$("#accordion").accordion({
 		collapsible : true,
 		active : false
