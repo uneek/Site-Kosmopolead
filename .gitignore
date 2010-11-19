@@ -12,3 +12,5 @@ spec/datasets/tmp
 *.tmproj
 .idea
 rerun.txt
+public/images/press/*
+
