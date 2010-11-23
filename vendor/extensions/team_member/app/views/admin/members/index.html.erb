@@ -17,7 +17,7 @@
     <% @members.each do |member| %>
       <tr class="node level-1">
         <td class="member">
-          <%= image_tag member.image(:thumb) %>
+          <%= image_tag member.avatar(:thumb) %>
           <%= link_to member.nom, edit_admin_member_url(:id => member.id) %>
         </td>
         <td class="remove">

@@ -16,7 +16,7 @@ module TeamMemberTags
 
   tag 'members:each:member' do |tag|
     member = tag.locals.member
-    %{<div class="membre_equipe"><div class="cadre"><img src="#{member.image}" width="76px" height="76px" /></div><p>#{member.nom}<br />#{member.poste}</p><a href="#{member.profil_kosmo}"></a></div>}
+    %{<div class="membre_equipe"><div class="cadre"><img src="#{member.avatar}" width="76px" height="76px" /></div><p>#{member.nom}<br />#{member.poste}</p><a href="#{member.profil_kosmo}"></a></div>}
   end
 
 end
