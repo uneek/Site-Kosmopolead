@@ -17,7 +17,7 @@ class HomeSliderExtension < Radiant::Extension
   
   def activate
      tab 'Content' do
-       add_item "Home Slider", "/admin/slides", :after => "Pages"
+       add_item "Gestion des Slides", "/admin/slides", :after => "Pages"
      end
      Page.send :include, HomeSliderTags
   end

@@ -1,0 +1,22 @@
+<h1>Supprimer le membre</h1>
+
+<p>Etes-vous sûr(e) de vouloir <strong class="warning">définitivement supprimer</strong> le membre suivant ?</p>
+
+<table class="index" id="members" cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+    <tr class="node level-1">
+      <td class="member">
+        <%= image('team_members/member', :alt => 'member-icon') %>
+        <%= h @member.nom %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<% form_for [:admin, @member], :html => {:method => :delete} do %>
+  <p class="buttons">
+    <input class="button" type="submit" value="Supprimer le membre"/>
+    or
+    <%= link_to 'Annuler', admin_members_url %>
+  </p>
+<%- end -%>

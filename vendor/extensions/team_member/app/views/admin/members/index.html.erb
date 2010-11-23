@@ -1,0 +1,32 @@
+<% include_stylesheet 'admin/members/members' %>
+
+<h1>Membres de l'équipe</h1>
+
+<p>Vous pouvez gérer ici les membres de l'équipe qui seront affichés sur la page "Qui sommes nous ?".</p>
+
+<table cellspacing="0" cellpadding="0" border="0" class="index" id="members">
+
+  <thead>
+    <tr>
+      <th class="member">Membre</th>
+      <th class="modify">Modifier</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @members.each do |member| %>
+      <tr class="node level-1">
+        <td class="member">
+          <%= image_tag member.image(:thumb) %>
+          <%= link_to member.nom, edit_admin_member_url(:id => member.id) %>
+        </td>
+        <td class="remove">
+          <%= link_to image('remove', :alt => 'Supprimer le membre'), remove_admin_member_url(:id => member.id) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
+
+<p><%= link_to image("members/new-member", :alt => "Nouveau membre"), {:action => :new} %></p>

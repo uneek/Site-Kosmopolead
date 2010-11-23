@@ -1,0 +1,34 @@
+<% form_for [:admin, @member], :html => { :multipart => true } do |f|%>
+  <div class="form-area">
+    <div  id="member_form_area">
+      <p class="title">
+        <label for="member_nom">Nom</label>
+        <%= f.text_field "nom", :class => 'textbox', :maxlength => 255 %>
+      </p>
+
+      <p class="poste">
+        <label for="member_poste">Poste</label>
+        <%= f.text_field "poste", :class => 'textbox', :maxlength => 255 %>
+      </p>
+
+      <p class="profil_kosmo">
+        <label for="member_profil_kosmo">Profil Kosmopolead</label>
+        <%= f.text_field "profil_kosmo", :class => 'textbox', :maxlength => 255 %>
+      </p>
+
+      <p class="image">
+        <label for="member_image">Image</label>
+        <%= f.file_field "image", :class => 'textbox' %>
+      </p>
+
+       <span class="clear">&nbsp;</span>
+    </div>
+  </div>
+
+  <p class="buttons">
+    <%= save_model_button(@member) %>
+    <%= save_model_and_continue_editing_button(@member) %>
+    or
+    <%= link_to "Cancel", {:action => :index} %>
+  </p>
+<% end %>

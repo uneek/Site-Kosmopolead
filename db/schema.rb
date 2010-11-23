@@ -35,6 +35,18 @@ ActiveRecord::Schema.define(:version => 20091003095744) do
     t.integer  "lock_version",                 :default => 0
   end
 
+  create_table "members", :force => true do |t|
+    t.string   "nom"
+    t.string   "poste"
+    t.string   "profil_kosmo"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "page_attachments", :force => true do |t|
     t.integer "asset_id"
     t.integer "page_id"

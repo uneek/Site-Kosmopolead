@@ -2,12 +2,12 @@
   <div class="form-area">
     <div  id="slide_form_area">
       <p class="title">
-        <label for="slide_title">Title</label>
+        <label for="slide_title">Titre</label>
         <%= f.text_field "title", :class => 'textbox', :maxlength => 255 %>
       </p>
 
       <p class="url">
-        <label for="slide_url">URL</label>
+        <label for="slide_url">Lien</label>
         <%= f.text_field "url", :class => 'textbox', :maxlength => 255 %>
       </p>
 
@@ -24,6 +24,6 @@
     <%= save_model_button(@slide) %>
     <%= save_model_and_continue_editing_button(@slide) %>
     or
-    <%= link_to "Cancel", {:action => :index} %>
+    <%= link_to "Annuler", {:action => :index} %>
   </p>
 <% end %>

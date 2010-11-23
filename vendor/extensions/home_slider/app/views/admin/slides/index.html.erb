@@ -1,15 +1,15 @@
 <% include_stylesheet 'admin/slides/slides' %>
 
-<h1>slides</h1>
+<h1>Gestion des Slides</h1>
 
-<p>You can enter slides here, which will show up on the public side of your website.</p>
+<p>Vous pouvez gérer ici les slides afficher sur la page d'accueil.</p>
 
 <table cellspacing="0" cellpadding="0" border="0" class="index" id="slides">
 
   <thead>
     <tr>
-      <th class="slide">slide</th>
-      <th class="modify">Modify</th>
+      <th class="slide">Slides</th>
+      <th class="modify">Modifier</th>
     </tr>
   </thead>
 
@@ -21,7 +21,7 @@
           <%= link_to slide.title, edit_admin_slide_url(:id => slide.id) %>
         </td>
         <td class="remove">
-          <%= link_to image('remove', :alt => 'Remove slide'), remove_admin_slide_url(:id => slide.id) %>
+          <%= link_to image('remove', :alt => 'Supprimer le slide'), remove_admin_slide_url(:id => slide.id) %>
         </td>
       </tr>
     <% end %>
@@ -29,4 +29,4 @@
 
 </table>
 
-<p><%= link_to image("slides/new-slide", :alt => "New slide"), {:action => :new} %></p>
+<p><%= link_to image("slides/new-slide", :alt => "Nouveau Slide"), {:action => :new} %></p>

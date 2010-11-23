@@ -2,7 +2,7 @@ root{
   display:block;
 }
 
-html {
+html, body {
   font-family: Arial, Helvetica, sans-serif;
   font-size : 13px;
   background-color : white;
@@ -13,7 +13,32 @@ html {
   width:100%;
 }
 
-body {
+/* body Parts */
+
+	/* Login bar */
+
+#logger{
+	border : none;
+	position : relative;
+	background : url('/images/degrade_bandeau_login.png') repeat-x;
+	height : 35px;
+	color : #FFFFFF;
+	padding-top : 5px;
+	width : 100%;
+	margin-left : 0px;
+	margin-right : auto;
+	z-index : 100;
+}
+
+#grey_block{
+	position : relative;
+	width : 100%;
+	height : 200px;
+	background-color : #EEEEEE;
+	margin-bottom : -200px;
+}
+
+#container {
   font-family: Arial, Helvetica, sans-serif;
   font-size : 13px;
   background-color : white;
@@ -24,25 +49,12 @@ body {
   margin-top : 0px;
   margin-bottom : 0px;
   border : none;
-  width: 1074px;
+  width: 960px;
 }
 
-/* Body parts */
+/* Container parts */
 
-	/* Login bar */
 
-#logger{
-	border : none;
-	position : relative;
-	background-color : #000000;
-	height : 30px;
-	color : #FFFFFF;
-	padding-top : 5px;
-	width : 960px;
-	margin-left : 57px;
-	margin-right : auto;
-	z-index : 100;
-}
 
 	/* Central block with banner, text and footer */
 
@@ -52,7 +64,8 @@ body {
   color : white;
   margin-top : 0px;
   margin-bottom : 0px;
-  margin-left : 57px;
+  margin-left : auto;
+  margin-right : auto;
   border : none;
   width : 960px;
   float : left;
@@ -66,11 +79,11 @@ body {
 	/* Side part with cube-links on the right */
 
 #sider{
-  position : relative;
+  position : absolute;
   background-color : transparent;
   width : 87px;
   margin-top : -10px;
-  margin-left : -30px;
+  margin-left : 930px;
   float : left;
   padding : 0px;
   height : 347px;
@@ -87,8 +100,9 @@ body {
   margin-right : 0px;
   margin-left : 0px;
   text-align : right;
+  padding-top : 19px;
   clear : left;
-  height : 200px;
+  height : 121px;
   background : url('../images/bandeau.png') no-repeat #382d24;
 }
 
@@ -97,9 +111,10 @@ body {
 #content {
   margin-left : 0px;
   margin-right : 0px;
-  background-color : white;
+  background: url('/images/degrade_page_principale.png') left top repeat-x #FFFFFF;
   color : black;
   min-height : 390px;
+  border-top : solid 1px #FFFFFF;
 }
 
 		/* Footer, bottom of the page, contains sitemap, external links and commercial infos */
@@ -123,22 +138,23 @@ body {
 			/* Menu parts */
 
 .menu{
-	margin-top : 10px;
-	margin-right : 10px;
-	height : 40px;
 	float : right;
+	height : 30px;
         font-weight : bold;
 	font-size: 14px;
+	margin : 18px 10px 0 0;
+	padding : 0;
 }
 
 .menu_ul{
   	list-style-type : none;
-	margin-right : 5px;
+	margin : 0;
+	padding : 8px 0 0 0;
 }
 
 .logo{	
-	width : 540px;
-	height : 150px;
+	width : 372px;
+	height : 73px;
 	margin-bottom : 0;
 }
 
@@ -148,14 +164,14 @@ a.logo_link{
 	padding : 0;
 	margin : 0;
 	display : block;
-	width : 540px;
+	width : 372px;
+	height : 73px;
 	margin-left : 30px;
 }
 
 #ul_vous-etes{
 	position : absolute;
-	margin-left : 85px;
-	top : 200px;
+	top : 22px;
         padding-left : 5px;
 	padding-right : 5px;
 	background-color : #382d24;
@@ -184,9 +200,13 @@ a.logo_link{
 }
 
 .menu_ul li{
-  display : inline;
-  margin-left : 15px;
-  padding-bottom : 7px;
+  text-align : center;
+  position : relative;
+  float : left;
+  display : block;
+  margin : 0 10px 0 20px;
+  padding : 0;
+  height : 19px;
 }
 
 .menu_ul a:link{
@@ -199,13 +219,18 @@ a.logo_link{
   text-decoration : none;
 }
 
+.menu_ul a:hover{
+  color : #00CFFF;
+  text-decoration : none;
+}
+
 .menu_ul li:hover{
   color : #00cfff;
   border-bottom : #00cfff solid 3px;
 }
 
 .menu_ul a:active{
-  color : white;
+  /*color : white;*/
   text-decoration : none;
 }
 
@@ -244,6 +269,10 @@ a.logo_link{
 	text-decoration : none;
 }
 
+#content img{
+	border : none;
+}
+
 .para{
   margin-left : 50px;
   margin-right : 50px;
@@ -255,52 +284,51 @@ h3{
 }
 			/* Page d'accueil */
 .central{
-  width : 900px;
+  width : 884px;
   padding : 10px;
   margin-bottom : 5px;
-  background-image : url('../images/central_bkg.png');
-  height : 205px;
+  background : url('../images/central_bkg.png') repeat-x;
+  height : 190px;
   float : left;
 }
 
 .central_left{
-  background-image : url('../images/central_left.png');
+  background: url('../images/central_left.png') no-repeat;
   width : 20px;
   height : 210px;
+  margin-left : 8px;
   float : left;
 }
 
 .central_right{
-  background-image : url('../images/central_right.png');
+  background: url('../images/central_right.png') no-repeat;
   width : 20px;
   height : 210px;
   float : left;
 }
 
 .central_vsep{
-  margin-top : 5px;
   margin-right : 0px;
   margin-left : 0px;
   background-image : url('../images/central_sep.png');
   width : 2px;
-  height : 191px;
+  height : 180px;
   float : left;
 }
 
 .temoin{
   margin-left : -20px;
-  margin-top : 5px;
-  width : 76%;
+  width : 677px;
   margin-right : 0px;
-  height : 191px;
+  height : 180px;
   float : left;
 }
 
 .join{
-  font-size : 140%;
+  font-size : 23px;
   margin-right : 0px;
   margin-top : 0px;
-  width : 23%;
+  width : 200px;
   margin-left : 0px;
   padding-left : 21px;
   text-align : center;
@@ -402,15 +430,11 @@ h3{
 .press_left p {font-family:arial;}
 .press_left p {margin-top:30px;margin-bottom:20px;}
 .press_left .add_comment_block {padding:10px;text-align:left;}
-.press_right h1 {text-align:center;color:#00cfff;margin-bottom:20px;margin-top:20px;}
+.press_right h1 {text-align:center;color:#00cfff;margin-bottom:30px;margin-top:20px; background : transparent; padding : 0; font-size : 14px;}
 .press_right p {text-align:justify;}
 .press_right strong {color:#00cfff;font-weight:normal;}
 .press_right p ul {list-style-type: circle}
 #big_image {text-align:center;}
-#big_image img{
-	width : 80%;
-	height : 80%;
-}
 .download_block  {min-height:30px;margin-top:5px;padding-top:5px;text-align:center;background:#fff url(../images/gradient_comments.png) repeat-x top}
 .press_main {
   width:100%;
@@ -585,16 +609,61 @@ vertical-align:baseline;
   color : inherit;
 }
 
+.actubox{
+  float : left;
+  width : 290px;
+  height : 305px;
+  margin-left : 20px;
+  margin-right : 5px;
+  background : url('');
+  margin-bottom : 0px;
+  border : none;
+}
+
+.actubox p{
+	padding : 10px 5px 10px 5px;
+	margin : 0;
+	border-bottom : #382d24 solid 1px;
+	background : url('') left center no-repeat transparent;
+}
+
+.actubox h2{
+	font-size : 8px;
+	color : #00cFFF;
+}
+
+.unimagedbox{
+  float : left;
+  width : 290px;
+  height : 305px;
+  margin-left : 20px;
+  margin-right : 5px;
+  background : transparent;
+  margin-bottom : 0px;
+  border : none;
+}
+
 .imagedbox{
   float : left;
-  width : 31.5%;
-  margin-left : 8px;
-  padding : 1px;
-  border : solid 2px ghostwhite;
-  box-shadow : 0px -5px 5px #F0F0F0;
-  -moz-box-shadow : 0px -5px 5px #F0F0F0;
-  -webkit-box-shadow : 0px -5px 5px #F0F0F0;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color='#F0F0F0', Direction=180, Strength=5);
+  width : 290px;
+  height : 305px;
+  margin-left : 20px;
+  margin-right : 5px;
+  background : url('/images/degrade_boite_vousetes.png') repeat-x;
+  margin-bottom : 0px;
+  border : none;
+}
+
+.imagedbox_shadow{
+  margin-top : 0px;
+  float : left;
+  width : 290px;
+  height : 1px;
+  margin-left : 20px;
+  margin-right : 5px;
+  margin-bottom : 10px;
+  border : none;
+  background : url('/images/shadow_boite_vousetes.png') no-repeat center center;
 }
 
 .imagedbox p{
@@ -607,24 +676,30 @@ vertical-align:baseline;
 
 .image_entreprises{
  background-image : url('../images/entreprises.jpg');
- height : 200px;
- width : 300px;
+ margin-top : 10px;
+ height : 180px;
+ width : 270px;
+ border : solid 1px #FFFFFF;
  margin-left : auto;
  margin-right : auto;
 }
 
 .image_clusters{
  background-image : url('../images/clusters.jpg');
- height : 200px;
- width : 300px;
+ margin-top : 10px;
+ height : 180px;
+ width : 270px;
+ border : solid 1px #FFFFFF;
  margin-left : auto;
  margin-right : auto;
 }
 
 .image_associations{
  background-image : url('../images/associations.jpg');
- height : 200px;
- width : 300px;
+ margin-top : 10px;
+ height : 180px;
+ width : 270px;
+ border : solid 1px #FFFFFF;
  margin-left : auto;
  margin-right : auto;
 }
@@ -633,21 +708,24 @@ vertical-align:baseline;
  position :absolute;
  height : 30px;
  background-color : black;
- width : 300px;
- opacity : 0.5;
-    -moz-opacity : 0.5;
-    -ms-filter: "alpha(opacity=50)";
-    filter : alpha(opacity=50);
+ width : 270px;
+ opacity : 0.4;
+    -moz-opacity : 0.4;
+    -ms-filter: "alpha(opacity=40)";
+    filter : alpha(opacity=40);
 }
 
 .title{
  position :absolute;
- top : 5px;
+ top : 7px;
+ letter-spacing : 2px;
+ font-weight : bold;
+ font-size : 15px;
  text-transform : uppercase;
  position : relative;
  text-align : center;
  background-color : transparent;
- width : 300px;
+ width : 270px;
  color : white;
 }
 		
@@ -709,18 +787,17 @@ vertical-align:baseline;
 }
 
 ul.sitemap{
-  font-size : 9px;
-  padding-left : 5px;
+  font-size : 10px;
+  padding-left : 2px;
 }
 
 li.sitemap{
-  margin-left : 0px;
   margin-bottom : 10px;
 }
 
-a.childsitemap{
+li.childsitemap{
   font-size : 10px;
-  margin-bottom : 0px;
+  margin-bottom : 10px;
 }
 
 
@@ -748,15 +825,13 @@ a.childsitemap{
 
 /* Non-specific */
 
-h2{
+h1{
  margin-left : 10px;
  color : #382D24 ;
- background-color : transparent;
+ background: url('/images/puce_titre.png') left top no-repeat transparent;
  font-size : 18px;
-}
-
-h2 img{
- vertical-align : middle;
+ padding-left : 50px;
+ height : 24px;
 }
 
 .right_aligned{
@@ -784,7 +859,7 @@ h2 img{
 
 #logger form{
 	text-align : center;
-	font-size:12px;
+	font : arial regular, #CCC, 12px;
 	letter-spacing:2px;
 	margin:0 5px 0 50px;
 	text-transform:uppercase;
@@ -816,9 +891,7 @@ h2 img{
 #lost_password {
 color:#877D6E;
 font-size:10px;
-position:absolute;
 text-transform:lowercase;
 letter-spacing:0px;
-right:220px;
-top:24px;
+
 }
