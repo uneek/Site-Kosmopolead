@@ -13,4 +13,4 @@ spec/datasets/tmp
 .idea
 rerun.txt
 public/press/*
-public/system
+public/system/*
