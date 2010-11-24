@@ -87,6 +87,21 @@ ActiveRecord::Schema.define(:version => 20091003095744) do
   add_index "pages", ["slug", "parent_id"], :name => "pages_child_slug"
   add_index "pages", ["virtual", "status_id"], :name => "pages_published"
 
+  create_table "press_files", :force => true do |t|
+    t.string   "nom"
+    t.string   "type"
+    t.string   "document_file_name"
+    t.string   "document_content_type"
+    t.integer  "document_file_size"
+    t.datetime "document_updated_at"
+    t.string   "visual_file_name"
+    t.string   "visual_content_type"
+    t.integer  "visual_file_size"
+    t.datetime "visual_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "sessions", :force => true do |t|
     t.string   "session_id"
     t.text     "data"

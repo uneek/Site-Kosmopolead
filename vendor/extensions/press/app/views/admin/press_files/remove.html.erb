@@ -1,0 +1,22 @@
+<h1>Suppression du fichier</h1>
+
+<p>Êtes-vous sûr(e) de vouloir <strong class="warning">supprimer définitivement</strong> le fichier suivant ?</p>
+
+<table class="index" id="press_files" cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+    <tr class="node level-1">
+      <td class="press_file">
+        <%= image('press_files/press_file', :alt => 'press_file-icon') %>
+        <%= h @press_file.nom %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<% form_for [:admin, @press_file], :html => {:method => :delete} do %>
+  <p class="buttons">
+    <input class="button" type="submit" value="Supprimer le fichier"/>
+    or
+    <%= link_to 'Annuler', admin_press_files_url %>
+  </p>
+<%- end -%>

@@ -14,11 +14,12 @@ class PressExtension < Radiant::Extension
   # end
 
   # See your config/routes.rb file in this extension to define custom routes
-
+  
   def activate
     SiteController.send :include, SiteControllerExtension
-    # tab 'Content' do
-    #   add_item "Press", "/admin/press", :after => "Pages"
-    # end
+    tab 'Content' do
+      add_item "Press", "/admin/press_files", :after => "Pages"
+    end
+    Page.send :include, PressTags
   end
 end

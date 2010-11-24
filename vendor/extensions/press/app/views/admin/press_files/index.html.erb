@@ -1,0 +1,34 @@
+<% include_stylesheet 'admin/press_files/press_files' %>
+
+<h1>Gestion des fichiers téléchargeables sur le site</h1>
+
+<p>Vous pouvez gérer ici les fichiers disponibles sur le site.</p>
+
+<table cellspacing="0" cellpadding="0" border="0" class="index" id="press_files">
+
+  <thead>
+    <tr>
+      <th class="press_file">Fichiers</th>
+      <th class="modify">Modifier</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @press_files.each do |press_file| %>
+      <tr class="node level-1">
+        <td class="press_file">
+          <% if (press_file.has_attribute?("visual")) %>
+            <%= image_tag press_file.visual(:thumb) %>
+          <%- end -%>
+          <%= link_to press_file.nom, edit_admin_press_file_url(:id => press_file.id) %>
+        </td>
+        <td class="remove">
+          <%= link_to image('remove', :alt => 'Supprimer le fichier'), remove_admin_press_file_url(:id => press_file.id) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
+
+<p><%= link_to image("press_files/new-press_document", :alt => "Nouveau document"), new_admin_press_file_path(:file_type => "document") %> ou <%= link_to image("press_files/new-press_visual", :alt => "Nouveau visuel"),new_admin_press_file_path(:file_type => "visual") %></p>

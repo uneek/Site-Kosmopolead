@@ -1,0 +1,6 @@
+<% case @press_file
+    when PressVisual
+      render :partial => 'form_press_visual'
+    when PressDocument
+      render :partial => 'form_press_document'
+    end %>

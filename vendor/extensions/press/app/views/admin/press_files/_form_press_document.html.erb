@@ -1,0 +1,23 @@
+<% form_for [:admin, @press_file], :html => { :multipart => true } do |f|%>
+  <div class="form-area">
+    <div  id="press_file_form_area">
+      <p class="nom">
+        <label for="press_file_nom">Nom</label>
+        <%= f.text_field :nom, :class => 'textbox', :maxlength => 255 %>
+      </p>
+      <p class="document">
+         <label for="press_file_document">Document</label>
+         <%= f.file_field :document, :class => 'textbox' %>
+      </p>
+
+       <span class="clear">&nbsp;</span>
+    </div>
+  </div>
+
+  <p class="buttons">
+    <%= save_model_button(@press_file) %>
+    <%= save_model_and_continue_editing_button(@press_file) %>
+    or
+    <%= link_to "Annuler", {:action => :index} %>
+  </p>
+<% end %>
