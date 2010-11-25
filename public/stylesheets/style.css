@@ -415,7 +415,7 @@ h3{
 .unimagedbox{
   float : left;
   width : 290px;
-  height : 305px;
+  min-height : 305px;
   margin-left : 20px;
   margin-right : 5px;
   background : transparent;
