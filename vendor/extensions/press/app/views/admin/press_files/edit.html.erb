@@ -1,4 +1,9 @@
 <% include_stylesheet 'admin/press_files/press_files' %>
 
 <h1>Edition du fichier</h1>
-<%= render :partial => 'form' %>
+<%= case @press_file
+    when PressVisual
+      render :partial => 'form_press_visual'
+    when PressDocument
+      render :partial => 'form_press_document'
+    end %>

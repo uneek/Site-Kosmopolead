@@ -5,5 +5,5 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :press_visuals
    end
 
-   map.resources :press_files, :member => {:download_visual => :get, :download_document => :get}
+   map.resources :press_downloads, :member => {:download_visual => :get, :download_document => :get}
 end

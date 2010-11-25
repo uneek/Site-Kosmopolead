@@ -1,0 +1,22 @@
+<h1>Suppression de l'actualité</h1>
+
+<p>Êtes-vous sûr(e) de vouloir <strong class="warning">supprimer définitivement</strong> l'actualité suivant ?</p>
+
+<table class="index" id="actus" cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+    <tr class="node level-1">
+      <td class="actu">
+        <%= image('actus/actu', :alt => 'actu-icon') %>
+        <%= h @actu.actu_date %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<% form_for [:admin, @actu], :html => {:method => :delete} do %>
+  <p class="buttons">
+    <input class="button" type="submit" value="Supprimer l'actualité"/>
+    or
+    <%= link_to 'Annuler', admin_actus_url %>
+  </p>
+<%- end -%>

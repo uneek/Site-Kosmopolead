@@ -8,18 +8,36 @@
 
   <thead>
     <tr>
-      <th class="press_file">Fichiers</th>
+      <th class="press_file">Documents</th>
       <th class="modify">Modifier</th>
     </tr>
   </thead>
 
   <tbody>
-    <% @press_files.each do |press_file| %>
+    <% @press_documents.each do |press_file| %>
       <tr class="node level-1">
         <td class="press_file">
-          <% if (press_file.has_attribute?("visual")) %>
-            <%= image_tag press_file.visual(:thumb) %>
-          <%- end -%>
+          <%= link_to press_file.nom, edit_admin_press_file_url(:id => press_file.id) %>
+        </td>
+        <td class="remove">
+          <%= link_to image('remove', :alt => 'Supprimer le fichier'), remove_admin_press_file_url(:id => press_file.id) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+
+  <thead>
+    <tr>
+      <th class="press_file">Visuels</th>
+      <th class="modify">Modifier</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @press_visuals.each do |press_file| %>
+      <tr class="node level-1">
+        <td class="press_file">
+          <%= image_tag press_file.visual(:thumb) %>
           <%= link_to press_file.nom, edit_admin_press_file_url(:id => press_file.id) %>
         </td>
         <td class="remove">

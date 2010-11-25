@@ -353,6 +353,162 @@ h3{
   margin-right : auto;
 }
 
+.actubox{
+  float : left;
+  width : 290px;
+  height : 305px;
+  margin-left : 20px;
+  margin-right : 5px;
+  background : url('/images/ombre_gauche_actu.png') left center no-repeat #E2DAC3;
+  margin-bottom : 0px;
+  border : none;
+}
+
+.actubox ul{
+	list-style-type : none;
+	margin : 0;
+	padding : 0;
+	border : none;
+}
+
+.actubox li{
+	padding : 10px 0 10px 0;
+	margin : 0 10px 0 10px;
+	border-bottom : #AA9979 solid 1px;
+
+}
+
+.actubox ul li a{
+	margin : 0;
+	padding : 0 0 0 30px;
+	border : none;
+	width : 100%;
+	height : 100%;
+	display : block;
+	color : black;
+	background : url('/images/puce_actu.png') left center no-repeat transparent;
+}
+
+.actubox p{
+	margin : 0;
+	padding : 0;
+	border : none;
+}
+
+.actubox p:first-line{
+	font-size : 11px;
+	color : #00cFFF;
+}
+
+.actubox h2{
+	font-size : 8px;
+	color : #00cFFF;
+}
+
+.actubox .rss_actu{
+	float : right;
+	position : relative;
+	top : -18px;
+	right : -18px;
+}
+
+.unimagedbox{
+  float : left;
+  width : 290px;
+  height : 305px;
+  margin-left : 20px;
+  margin-right : 5px;
+  background : transparent;
+  margin-bottom : 0px;
+  border : none;
+}
+
+.imagedbox{
+  float : left;
+  width : 290px;
+  height : 305px;
+  margin-left : 20px;
+  margin-right : 5px;
+  background : url('/images/degrade_boite_vousetes.png') repeat-x;
+  margin-bottom : 0px;
+  border : none;
+}
+
+.imagedbox_shadow{
+  margin-top : 0px;
+  float : left;
+  width : 290px;
+  height : 1px;
+  margin-left : 20px;
+  margin-right : 5px;
+  margin-bottom : 20px;
+  border : none;
+  background : url('/images/shadow_boite_vousetes.png') no-repeat center center;
+}
+
+.imagedbox p{
+ padding-left : 5px;
+ padding-right : 5px;
+ font-size : 80%;
+ text-align : justify;
+ line-height : 150%;
+}
+
+.image_entreprises{
+ background-image : url('../images/entreprises.jpg');
+ margin-top : 10px;
+ height : 180px;
+ width : 270px;
+ border : solid 1px #FFFFFF;
+ margin-left : auto;
+ margin-right : auto;
+}
+
+.image_clusters{
+ background-image : url('../images/clusters.jpg');
+ margin-top : 10px;
+ height : 180px;
+ width : 270px;
+ border : solid 1px #FFFFFF;
+ margin-left : auto;
+ margin-right : auto;
+}
+
+.image_associations{
+ background-image : url('../images/associations.jpg');
+ margin-top : 10px;
+ height : 180px;
+ width : 270px;
+ border : solid 1px #FFFFFF;
+ margin-left : auto;
+ margin-right : auto;
+}
+
+.shadow{
+ position :absolute;
+ height : 30px;
+ background-color : black;
+ width : 270px;
+ opacity : 0.4;
+    -moz-opacity : 0.4;
+    -ms-filter: "alpha(opacity=40)";
+    filter : alpha(opacity=40);
+}
+
+.title{
+ position :absolute;
+ top : 7px;
+ letter-spacing : 2px;
+ font-weight : bold;
+ font-size : 15px;
+ text-transform : uppercase;
+ position : relative;
+ text-align : center;
+ background-color : transparent;
+ width : 270px;
+ color : white;
+}
+
 			/* Page 'L'entreprise' */
 
 .membre_equipe{
@@ -609,125 +765,7 @@ vertical-align:baseline;
   color : inherit;
 }
 
-.actubox{
-  float : left;
-  width : 290px;
-  height : 305px;
-  margin-left : 20px;
-  margin-right : 5px;
-  background : url('');
-  margin-bottom : 0px;
-  border : none;
-}
 
-.actubox p{
-	padding : 10px 5px 10px 5px;
-	margin : 0;
-	border-bottom : #382d24 solid 1px;
-	background : url('') left center no-repeat transparent;
-}
-
-.actubox h2{
-	font-size : 8px;
-	color : #00cFFF;
-}
-
-.unimagedbox{
-  float : left;
-  width : 290px;
-  height : 305px;
-  margin-left : 20px;
-  margin-right : 5px;
-  background : transparent;
-  margin-bottom : 0px;
-  border : none;
-}
-
-.imagedbox{
-  float : left;
-  width : 290px;
-  height : 305px;
-  margin-left : 20px;
-  margin-right : 5px;
-  background : url('/images/degrade_boite_vousetes.png') repeat-x;
-  margin-bottom : 0px;
-  border : none;
-}
-
-.imagedbox_shadow{
-  margin-top : 0px;
-  float : left;
-  width : 290px;
-  height : 1px;
-  margin-left : 20px;
-  margin-right : 5px;
-  margin-bottom : 10px;
-  border : none;
-  background : url('/images/shadow_boite_vousetes.png') no-repeat center center;
-}
-
-.imagedbox p{
- padding-left : 5px;
- padding-right : 5px;
- font-size : 80%;
- text-align : justify;
- line-height : 150%;
-}
-
-.image_entreprises{
- background-image : url('../images/entreprises.jpg');
- margin-top : 10px;
- height : 180px;
- width : 270px;
- border : solid 1px #FFFFFF;
- margin-left : auto;
- margin-right : auto;
-}
-
-.image_clusters{
- background-image : url('../images/clusters.jpg');
- margin-top : 10px;
- height : 180px;
- width : 270px;
- border : solid 1px #FFFFFF;
- margin-left : auto;
- margin-right : auto;
-}
-
-.image_associations{
- background-image : url('../images/associations.jpg');
- margin-top : 10px;
- height : 180px;
- width : 270px;
- border : solid 1px #FFFFFF;
- margin-left : auto;
- margin-right : auto;
-}
-
-.shadow{
- position :absolute;
- height : 30px;
- background-color : black;
- width : 270px;
- opacity : 0.4;
-    -moz-opacity : 0.4;
-    -ms-filter: "alpha(opacity=40)";
-    filter : alpha(opacity=40);
-}
-
-.title{
- position :absolute;
- top : 7px;
- letter-spacing : 2px;
- font-weight : bold;
- font-size : 15px;
- text-transform : uppercase;
- position : relative;
- text-align : center;
- background-color : transparent;
- width : 270px;
- color : white;
-}
 		
 		/* Footer parts */
 

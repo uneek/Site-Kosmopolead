@@ -88,7 +88,7 @@ Asset.MakeDroppables = function () {
         	}
         	box.focus();
         }
-      });      
+      });
     	box.addClassName('droppable');
     }
   });

@@ -1,0 +1,35 @@
+<% include_stylesheet 'admin/actus/actus' %>
+
+<h1>Gestion des Actualités</h1>
+
+<p>Vous pouvez gérer ici les actualités affichés sur la page d'accueil.</p>
+
+<table cellspacing="0" cellpadding="0" border="0" class="index" id="actus">
+
+  <thead>
+    <tr>
+      <th class="actu">Actus</th>
+      <th class="actu">Contenu</th>
+      <th class="modify">Modifier</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @actus.each do |actu| %>
+      <tr class="node level-1">
+        <td class="actu">
+          <%= link_to actu.actu_date, edit_admin_actu_url(:id => actu.id) %>
+        </td>
+        <td>
+          <%= actu.contenu %>
+        </td>
+        <td class="remove">
+          <%= link_to image('remove', :alt => 'Supprimer l\'actualité'), remove_admin_actu_url(:id => actu.id) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
+
+<p><%= link_to image("actus/new-actu", :alt => "Nouvelle actualité"), {:action => :new} %></p>

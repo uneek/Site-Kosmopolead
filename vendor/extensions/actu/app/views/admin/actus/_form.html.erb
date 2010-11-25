@@ -1,0 +1,29 @@
+<% form_for [:admin, @actu], :html => { :multipart => true } do |f|%>
+  <div class="form-area">
+    <div  id="actu_form_area">
+      <p class="date">
+        <label for="actu_date">Date</label>
+        <%= f.date_select "actu_date" %>
+      </p>
+
+      <p class="contenu">
+        <label for="actu_contenu">Contenu</label>
+        <%= f.text_area "contenu", :class => 'textbox', :maxlength => 255 %>
+      </p>
+
+      <p class="lien">
+        <label for="actu_lien">Lien</label>
+        <%= f.text_field "lien", :class => 'textbox' %>
+      </p>
+
+       <span class="clear">&nbsp;</span>
+    </div>
+  </div>
+
+  <p class="buttons">
+    <%= save_model_button(@actu) %>
+    <%= save_model_and_continue_editing_button(@actu) %>
+    or
+    <%= link_to "Annuler", {:action => :index} %>
+  </p>
+<% end %>
