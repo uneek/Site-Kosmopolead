@@ -40,7 +40,7 @@ html, body {
 
 #container {
   font-family: Arial, Helvetica, sans-serif;
-  font-size : 13px;
+  font-size : 12px;
   background-color : white;
   color : black;
   padding : 0px;
@@ -425,13 +425,14 @@ h3{
 
 .imagedbox{
   float : left;
-  width : 290px;
+  width : 270px;
   height : 305px;
   margin-left : 20px;
   margin-right : 5px;
   background : url('/images/degrade_boite_vousetes.png') repeat-x;
   margin-bottom : 0px;
   border : none;
+  padding:10px;
 }
 
 .imagedbox_shadow{
@@ -456,7 +457,7 @@ h3{
 
 .image_entreprises{
  background-image : url('../images/entreprises.jpg');
- margin-top : 10px;
+ margin-top : 5px;
  height : 180px;
  width : 270px;
  border : solid 1px #FFFFFF;
@@ -466,7 +467,7 @@ h3{
 
 .image_clusters{
  background-image : url('../images/clusters.jpg');
- margin-top : 10px;
+ margin-top : 5px;
  height : 180px;
  width : 270px;
  border : solid 1px #FFFFFF;
@@ -476,7 +477,7 @@ h3{
 
 .image_associations{
  background-image : url('../images/associations.jpg');
- margin-top : 10px;
+ margin-top : 5px;
  height : 180px;
  width : 270px;
  border : solid 1px #FFFFFF;
