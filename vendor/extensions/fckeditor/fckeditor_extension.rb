@@ -14,7 +14,7 @@ class FckeditorExtension < Radiant::Extension
   end
 
   def activate
-    admin.tabs.add "Fckeditor", "/admin/fckeditor", :after => "Layouts", :visibility => [:all]
+#    admin.tabs.add "Fckeditor", "/admin/fckeditor", :after => "Layouts", :visibility => [:all]
     FckeditorFilter
     Admin::PagesController.send :include, FckeditorInterface
     admin.page.edit.add :part_controls, "editor_control"

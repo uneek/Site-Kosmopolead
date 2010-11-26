@@ -776,12 +776,16 @@ vertical-align:baseline;
  color : #000000;
 }
 
-.block_link:hover .imagedbox div{
+.block_link:hover .image_clusters{
  border : solid 1px #00cFFF;
 }
 
-.block_link:hover .imagedbox div div{
- border : none;
+.block_link:hover .image_entreprises{
+ border : solid 1px #00cFFF;
+}
+
+.block_link:hover .image_associations{
+ border : solid 1px #00cFFF;
 }
 
 .block_link:hover .title{
