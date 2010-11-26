@@ -174,7 +174,7 @@ FCKConfig.FlashDlgHideAdvanced	= false ;
 FCKConfig.ProtectedTags = '' ;
 
 // This will be applied to the body element of the editor
-FCKConfig.BodyId = 'Wysiwygeditor' ;
+FCKConfig.BodyId = '' ;
 FCKConfig.BodyClass = '' ;
 
 FCKConfig.DefaultStyleLabel = '' ;
