@@ -60,15 +60,18 @@
 //      });
 //});
 
-Droppables.add(
-    'part-dossier_de_presse', {
-        onDrop:function(element, dropon){
-            alert('pouet');
-            var link = element.select('a.bucket_link')[0];
-            var asset_id = element.id.split('_').last();
-            var classes = element.className.split(' ');
-            var tag_type = classes[0];
-            var tag = '<r:assets:' + tag_type + ' id="' + asset_id + '" size="original" />';
-            FCKeditorAPI.GetInstance('part_dossier_de_presse').InsertHtml(tag);
-        }
-    });
+
+//alert('before');
+//Droppables.add(
+//    'Wysiwygeditor', {
+//        onDrop:function(element){
+//            alert('pouet');
+//            var link = element.select('a.bucket_link')[0];
+//            var asset_id = element.id.split('_').last();
+//            var classes = element.className.split(' ');
+//            var tag_type = classes[0];
+//            var tag = '<r:assets:' + tag_type + ' id="' + asset_id + '" size="original" />';
+//            FCKeditorAPI.GetInstance('part_dossier_de_presse').InsertHtml(tag);
+//        }
+//    });
+//alert('editor added');

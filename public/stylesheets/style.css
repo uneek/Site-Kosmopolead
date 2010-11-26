@@ -129,7 +129,7 @@ html, body {
   padding-bottom : 0px;
   padding-left : 125px;
   padding-right : 100px;
-  height : 212px;
+  height : 120px;
   clear : left;
 }
 
@@ -390,9 +390,11 @@ h3{
 }
 
 .actubox p{
+	position : relative;
 	margin : 0;
 	padding : 0;
 	border : none;
+	width : 90%
 }
 
 .actubox p:first-line{
@@ -762,7 +764,27 @@ vertical-align:baseline;
 			/* Autres */
 
 .block_link{
-  color : inherit;
+  color : #000000;
+}
+
+.block_link:hover{
+ color : #000000;
+}
+
+.block_link:hover p{
+ color : #000000;
+}
+
+.block_link:hover .imagedbox div{
+ border : solid 1px #00cFFF;
+}
+
+.block_link:hover .imagedbox div div{
+ border : none;
+}
+
+.block_link:hover .title{
+	color : #00cFFF;
 }
 
 
@@ -795,7 +817,8 @@ vertical-align:baseline;
 .vsep{
   background-image : url('../images/footer_sep.png');
   width : 2px;
-  height : 212px;
+  margin : 10px 0 10px 0;
+  height : 100px;
   float : left;
 }
 
@@ -909,6 +932,7 @@ h1{
 	margin-right : 20px;
 	width : 202px;
 	background : url('/images/champ_texte.png') 0 0 no-repeat;
+	padding-left : 10px;
 }
 
 #logger input:hover{

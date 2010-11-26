@@ -14,6 +14,10 @@ module PressTags
 #    preview.write("thumb")
 #  end
 
+  tag 'press_preview' do |tag|
+    return "<a href='/press_downloads/#{tag.attr[:file]}/download_#{tag.attr[:type]}'><img src='/system/documents/#{tag.attr[:file]}/thumb/dossier_de_presse.png' /></a>"
+  end
+
   tag 'visuals' do |tag|
     tag.expand
   end
