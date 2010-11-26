@@ -14,3 +14,4 @@ spec/datasets/tmp
 rerun.txt
 public/press/*
 public/system/*
+public/assets/*

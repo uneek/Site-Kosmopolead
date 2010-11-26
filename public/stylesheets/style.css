@@ -127,8 +127,8 @@ html, body {
   margin-bottom : -20px;
   padding-top : 0px;
   padding-bottom : 0px;
-  padding-left : 125px;
-  padding-right : 100px;
+  padding-left : 50px;
+  padding-right : 50px;
   height : 120px;
   clear : left;
 }
@@ -427,11 +427,11 @@ h3{
 
 .imagedbox{
   float : left;
-  width : 290px;
-  height : 305px;
+  width : 270px;
+  height : 313px;
   margin-left : 20px;
   margin-right : 5px;
-  background : url('/images/degrade_boite_vousetes.png') repeat-x;
+  background : url('/images/degrade_boite_vousetes.png') repeat-x scroll 0 0  #CECECE;
   margin-bottom : 0px;
   border : none;
   padding : 10px;
@@ -824,15 +824,55 @@ vertical-align:baseline;
 }
 
 .sitemap_div{
-  width : 180px;
+  width : 150px;
 }
 
 .links_div{
-  width : 245px;
+  width : 380px;
 }
 
 .links_div li{
   margin-bottom : 5px;
+}
+
+.link_press{
+	background : url('/images/boutons_footer.png') 42px 0;
+	width : 42px;
+	height : 42px;
+}
+
+.link_press:hover{
+	background : url('/images/boutons_footer.png') 42px 42px;
+	width : 42px;
+	height : 42px;
+}
+
+.link_press a{
+	margin : 0;
+	padding : 13px 0 0 50px;
+	height : 28px;
+	width : 100px;
+	display : block;
+}
+
+.link_contact{
+	background : url('/images/boutons_footer.png') 0 0;
+	width : 42px;
+	height : 42px;
+}
+
+.link_contact:hover{
+	background : url('/images/boutons_footer.png') 0 42px;
+	width : 42px;
+	height : 42px;
+}
+
+.link_contact a{
+	margin : 0;
+	padding : 13px 0 0 50px;
+	height : 28px;
+	width : 100px;
+	display : block;
 }
 
 .links_div img{
@@ -841,10 +881,14 @@ vertical-align:baseline;
   border-style : none;
 }
 
+.links_div ul{
+ padding-left : 10px;
+}
+
 .infos_div{
   text-align : right;
   font-size : 10px;
-  width : 250px;
+  width : 265px;
   padding-right : 20px;
 }
 
