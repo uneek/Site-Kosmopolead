@@ -18,7 +18,7 @@ class PressExtension < Radiant::Extension
   def activate
     SiteController.send :include, SiteControllerExtension
     tab 'Content' do
-      add_item "Gestion des fichiers", "/admin/press_files", :after => "Pages"
+      add_item "Gestion des visuels", "/admin/press_files", :after => "Pages"
     end
     Page.send :include, PressTags
   end
