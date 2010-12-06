@@ -4,12 +4,12 @@ $(function() {
 
 	$("#tabs_infos").tabs();	
 
-	$("#accordion").accordion({
+	/* $("#accordion").accordion({
 		collapsible : true,
 		active : false,
 		clearStyle:true,
 		autoHeight : false
-	});
+	});*/
 
 	/*$('#accordion').bind('accordionchange', function(event,ui) {
 		$('#accordion h3.ui-state-focus').removeClass('.ui-state-focus');

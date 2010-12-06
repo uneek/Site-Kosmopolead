@@ -191,11 +191,11 @@ a.logo_link{
         border : none;
 }
 
-#ul_vous-etes li:hover{
+#ul_vous-etes li:hover a{
 	color : #00cfff;
 }
 
-#ul_vous-etes li.current{
+#ul_vous-etes li.current a{
 	color : #00cfff;
 }
 
@@ -227,6 +227,14 @@ a.logo_link{
 .menu_ul li:hover{
   color : #00cfff;
   border-bottom : #00cfff solid 3px;
+}
+
+.menu_ul li:hover a{
+  color : #00cfff;
+}
+
+.menu_ul li:hover ul li a{
+	color : white;
 }
 
 .menu_ul a:active{
@@ -277,6 +285,10 @@ a.logo_link{
   margin-left : 50px;
   margin-right : 50px;
   /*width : 83%;*/
+}
+
+.para p{
+	padding-left : 10px;
 }
 
 h3{
@@ -840,6 +852,18 @@ vertical-align:baseline;
 }
 
 .link_press{
+	background : url('/images/boutons_footer.png') 42px 0;
+	width : 42px;
+	height : 42px;
+}
+
+.link_press:link{
+	background : url('/images/boutons_footer.png') 42px 0;
+	width : 42px;
+	height : 42px;
+}
+
+.link_press:visited{
 	background : url('/images/boutons_footer.png') 42px 0;
 	width : 42px;
 	height : 42px;
