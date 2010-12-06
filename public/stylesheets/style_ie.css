@@ -11,6 +11,9 @@ html, body {
   margin : 0px;
   border : none;
   width:100%;
+  /*-ms-filter: “progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ffffffff, endColorstr=#ffffffff)”; /* IE8+ 
+filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ffffffff, endColorstr=#ffffffff); /* IE7 and lower 
+*/
 }
 
 /* body Parts */
@@ -69,13 +72,9 @@ html, body {
   border : none;
   width : 960px;
   float : left;
-  box-shadow : 1px 1px 20px #555;
-  -moz-box-shadow : 1px -20px 15px #555;
-  -webkit-box-shadow : 1px -20px 15px #555;
-  /*filter: shadow(color='#CCCCCC', Direction=135, Strength=15)
-	filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=15);
-        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=15)";
-  zoom: 1;*/
+	box-shadow : 1px 1px 20px #555;
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=45, Strength=15, positive='true')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=45, Strength=15, positive="true");*/
   z-index : 1;
 }
 
@@ -528,10 +527,10 @@ h3{
  margin : 0;
  border : none;
  opacity: .4;  Standards Compliant Browsers 
- /*   filter: alpha(opacity=40); IE 7 and Earlier 
-     Next 2 lines IE8 
-    filter: progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTransform.Microsoft.Alpha(Opacity=40)"; */
+ filter: alpha(opacity=40);
+ -ms-filter: /*progid:DXImageTransform.Microsoft.Chroma(color='white')*/ "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: /*progid:DXImageTransform.Microsoft.Chroma(color='white')*/ progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    zoom : 1;
     
 }
 
