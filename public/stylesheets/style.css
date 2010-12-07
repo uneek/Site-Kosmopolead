@@ -7,8 +7,8 @@ html, body {
   font-size : 12px;
   background-color : white;
   color : black;
-  padding : 0px;
-  margin : 0px;
+  padding : 0;
+  margin : 0;
   border : none;
   width:100%;
 }
@@ -63,13 +63,13 @@ html, body {
   background-color : white;
   color : white;
   margin-top : 0px;
-  margin-bottom : 0px;
+  margin-bottom : -20px;
   margin-left : auto;
   margin-right : auto;
   border : none;
   width : 960px;
   float : left;
-  box-shadow : 1px 1px 20px #555;
+  box-shadow : 1px -20px 15px #555;
   -moz-box-shadow : 1px -20px 15px #555;
   -webkit-box-shadow : 1px -20px 15px #555;
   /*filter: shadow(color='#CCCCCC', Direction=135, Strength=15)
