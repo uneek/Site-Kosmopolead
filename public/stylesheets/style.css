@@ -69,9 +69,9 @@ html, body {
   border : none;
   width : 960px;
   float : left;
-  box-shadow : 1px -20px 15px #555;
   -moz-box-shadow : 1px -20px 15px #555;
   -webkit-box-shadow : 1px -20px 15px #555;
+  box-shadow : 1px -20px 15px #555;
   /*filter: shadow(color='#CCCCCC', Direction=135, Strength=15)
 	filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=15);
         -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=15)";
@@ -137,7 +137,6 @@ html, body {
   color : white;
   margin-left : 0px;
   margin-right : 0px;
- /* margin-bottom : -20px;*/
   padding-bottom : 0px;
   padding-left : 50px;
   padding-right : 50px;
