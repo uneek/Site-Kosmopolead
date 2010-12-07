@@ -399,6 +399,7 @@ h3{
   background: url('../images/bouton_inscrire.png') 0 32px;
   margin-left : auto;
   margin-right : auto;
+  cursor : pointer;
 }
 
 .actubox{
@@ -482,6 +483,10 @@ h3{
   margin-bottom : 0px;
   border : none;
   padding : 10px;
+}
+
+.imagedbox:hover{
+	cursor : pointer;
 }
 
 .imagedbox_shadow{
