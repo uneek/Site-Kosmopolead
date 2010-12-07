@@ -78,7 +78,7 @@ filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorst
 	box-shadow : 1px 1px 20px #555;
 	/*-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=45, Strength=15, positive='true')";*/
 	/*filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=45, Strength=15, positive="true");*/
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#0000FF,direction=45);
+	/* filter:progid:DXImageTransform.Microsoft.Shadow(color=#0000FF,direction=45); */
 
   z-index : 1;
 }
