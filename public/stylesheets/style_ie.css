@@ -11,11 +11,6 @@ html, body {
   margin : 0px;
   border : none;
   width:100%;
-  /*-ms-filter: "progid:DXImageTransform.Microsoft.Chroma(color='white')"
-  filter: progid:DXImageTransform.Microsoft.Chroma(color='white')*/
-  /*-ms-filter: “progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ffffffff, endColorstr=#ffffffff)”; /* IE8+ 
-filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ffffffff, endColorstr=#ffffffff); /* IE7 and lower 
-*/
 }
 
 /* body Parts */
@@ -75,11 +70,6 @@ filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorst
   width : 960px;
   padding : 0 15px 0 15px;
   float : left;
-	box-shadow : 1px 1px 20px #555;
-	/*-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=45, Strength=15, positive='true')";*/
-	/*filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=45, Strength=15, positive="true");*/
-	/* filter:progid:DXImageTransform.Microsoft.Shadow(color=#0000FF,direction=45); */
-
   z-index : 1;
 }
 

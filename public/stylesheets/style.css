@@ -30,26 +30,28 @@ html, body {
 	z-index : 100;
 }
 
-#grey_block{
+.grey_block{
 	position : relative;
 	width : 100%;
 	height : 200px;
 	background-color : #EEEEEE;
 	margin-bottom : -200px;
+	z-index : 1;
 }
+
 
 #container {
   font-family: Arial;
   font-size : 12px;
-  background-color : white;
+  background : white;
   color : black;
-  padding : 0px;
+  padding : 0;
   margin-left : auto;
   margin-right : auto;
   margin-top : 0px;
   margin-bottom : 0px;
   border : none;
-  width: 960px;
+  width: 990px;
 }
 
 /* Container parts */
@@ -60,7 +62,7 @@ html, body {
 
 #page{
   position : relative;
-  background-color : white;
+  background : url('/images/ombre_content.png') center repeat-y transparent;
   color : white;
   margin-top : 0px;
   margin-bottom : 0px;
@@ -68,14 +70,8 @@ html, body {
   margin-right : auto;
   border : none;
   width : 960px;
+  padding : 0 15px 0 15px;
   float : left;
-  -moz-box-shadow : 1px -20px 15px #555;
-  -webkit-box-shadow : 1px -20px 15px #555;
-  box-shadow : 1px -20px 15px #555;
-  /*filter: shadow(color='#CCCCCC', Direction=135, Strength=15)
-	filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=15);
-        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=15)";
-  zoom: 1;*/
   z-index : 1;
 }
 
@@ -128,6 +124,7 @@ html, body {
   color : black;
   min-height : 390px;
   border-top : solid 1px #FFFFFF;
+  padding-bottom : 110px;
 }
 
 		/* Footer, bottom of the page, contains sitemap, external links and commercial infos */
@@ -452,7 +449,7 @@ h3{
 	float : right;
 	position : absolute;
 	top : 693px;
-	right : 3px;
+	right : 17px;
 }
 
 .unimagedbox{
