@@ -29,7 +29,7 @@
 		position:absolute;
 		left:51px;
 		top:202px;
-		z-index:2;
+		z-index:8000;
 		}	
 	#nextBtn, #slider1next{ 
 		left:666px;

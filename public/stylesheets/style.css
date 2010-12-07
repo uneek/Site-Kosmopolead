@@ -107,6 +107,7 @@ html, body {
   clear : left;
   height : 121px;
   background : url('../images/bandeau.png') no-repeat #382d24;
+  z-index : 9001;
 }
 
 		/* Content, contains texts */
@@ -120,19 +121,27 @@ html, body {
   border-top : solid 1px #FFFFFF;
 }
 
+#content_no_bg {
+  margin-left : 0px;
+  margin-right : 0px;
+  background: #FFFFFF;
+  color : black;
+  min-height : 390px;
+  border-top : solid 1px #FFFFFF;
+}
+
 		/* Footer, bottom of the page, contains sitemap, external links and commercial infos */
 
 #footer {
-  background-image : url('../images/footer.png');
+  background : url('/images/footer.png') repeat-x #1A0F06;
   color : white;
   margin-left : 0px;
   margin-right : 0px;
-  margin-bottom : -20px;
-  padding-top : 5px;
+ /* margin-bottom : -20px;*/
   padding-bottom : 0px;
   padding-left : 50px;
   padding-right : 50px;
-  height : 120px;
+  height : 130px;
   clear : left;
 }
 
@@ -147,6 +156,7 @@ html, body {
 	font-size: 14px;
 	margin : 18px 10px 0 0;
 	padding : 0;
+	z-index : 9000;
 }
 
 .menu_ul{
@@ -182,7 +192,7 @@ a.logo_link{
 	padding-right : 5px;
 	background-color : #382d24;
         border : solid 1px #00cfff;
-	z-index : 3;
+	z-index : 8000;
 	display : none;
 	text-align : left;
 	font-size : 12px;
@@ -576,7 +586,7 @@ h3{
 
 .membre_equipe .cadre img{
 	margin : 0;
-	padding-left : 3px;
+	padding-left : 2px;
 	padding-top : 1px;
 	border : none;
 }
@@ -678,8 +688,6 @@ vertical-align:baseline;
 	float : right;
 	display : block;
 	font-size : 10px;
-	padding-left : 25px;
-	padding-right : 15px;
 	height : 18px;
 	background : url('/images/neutral_button_download.png') left center no-repeat;
 	text-align : center;
@@ -687,6 +695,8 @@ vertical-align:baseline;
 }
 
 .download_button a{
+	padding-left : 25px;
+	padding-right : 15px;
 	color : #FFFFFF !important;
 	text-decoration : none;
 }
@@ -834,7 +844,7 @@ vertical-align:baseline;
 		/* Footer parts */
 
 .footer_div {
-  margin-top : 0px;
+  margin-top : 10px;
   margin-bottom : 0px;
   margin-left : auto;
   margin-right : auto;
@@ -842,7 +852,7 @@ vertical-align:baseline;
   color : white;
   padding-right : 5px;
   float : left;
-  height : 100%;
+/* height : 100%;*/
   width : 32%;
   font-size : 10px;
 }
@@ -852,6 +862,7 @@ vertical-align:baseline;
   width : 80px;
   margin-left : 0px;
   margin-right : 0px;
+  margin-top : 5px;
   padding-right : 0px;
   padding-left : 20px;
 }
@@ -865,11 +876,12 @@ vertical-align:baseline;
   background-image : url('../images/footer_sep.png');
   width : 2px;
   margin : 10px 0 10px 0;
-  height : 100px;
+  height : 110px;
   float : left;
 }
 
 .sitemap_div{
+  margin-top : 20px;
   width : 150px;
 }
 
@@ -948,6 +960,8 @@ vertical-align:baseline;
   font-size : 10px;
   width : 265px;
   padding-right : 20px;
+  margin-top : 10px;
+  height : 120px;
 }
 
 ul.sitemap{
@@ -996,10 +1010,12 @@ h1{
  font-size : 18px;
  padding-left : 50px;
  height : 24px;
+ margin-top : 10px;
 }
 
 .right_aligned{
   text-align : right;
+  margin : 0;
 }
 
 .justified_rtl{
@@ -1050,6 +1066,7 @@ h1{
 }
 
 #logger .connexion_button:hover{
+	cursor : pointer;
 	background : url('/images/connexion.png') 0 -20px no-repeat;	
 }
 
