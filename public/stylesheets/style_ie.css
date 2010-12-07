@@ -393,7 +393,7 @@ h3{
   margin-right : auto;
 }
 
-.join_button:hover{
+.join_button:hover{actub
   width : 152px;
   height : 32px;
   background: url('../images/bouton_inscrire.png') 0 32px;
@@ -435,6 +435,10 @@ h3{
 	display : block;
 	color : black;
 	background : url('/images/puce_actu.png') left center no-repeat transparent;
+}
+
+.actubox ul li a:hover{
+	cursor : pointer;
 }
 
 .actubox p{
