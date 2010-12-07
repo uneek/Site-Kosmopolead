@@ -11,6 +11,8 @@ html, body {
   margin : 0px;
   border : none;
   width:100%;
+  /*-ms-filter: "progid:DXImageTransform.Microsoft.Chroma(color='white')"
+  filter: progid:DXImageTransform.Microsoft.Chroma(color='white')*/
   /*-ms-filter: “progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ffffffff, endColorstr=#ffffffff)”; /* IE8+ 
 filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ffffffff, endColorstr=#ffffffff); /* IE7 and lower 
 */
@@ -33,7 +35,7 @@ filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorst
 	z-index : 100;
 }
 
-#grey_block{
+.grey_block{
 	position : relative;
 	width : 100%;
 	height : 200px;
@@ -44,15 +46,15 @@ filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorst
 #container {
   font-family: Arial;
   font-size : 12px;
-  background-color : white;
+  background : white;
   color : black;
-  padding : 0px;
+  padding : 0;
   margin-left : auto;
   margin-right : auto;
   margin-top : 0px;
   margin-bottom : 0px;
   border : none;
-  width: 960px;
+  width: 990px;
 }
 
 /* Container parts */
@@ -63,7 +65,7 @@ filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorst
 
 #page{
   position : relative;
-  background-color : white;
+  background : url('/images/ombre_content.png') center repeat-y transparent;
   color : white;
   margin-top : 0px;
   margin-bottom : 0px;
@@ -71,10 +73,13 @@ filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorst
   margin-right : auto;
   border : none;
   width : 960px;
+  padding : 0 15px 0 15px;
   float : left;
 	box-shadow : 1px 1px 20px #555;
-	/*-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=45, Strength=15, positive='true')";
-	filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=45, Strength=15, positive="true");*/
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=45, Strength=15, positive='true')";*/
+	/*filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=45, Strength=15, positive="true");*/
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#0000FF,direction=45);
+
   z-index : 1;
 }
 
@@ -442,7 +447,7 @@ h3{
 	float : right;
 	position : absolute;
 	top : 693px;
-	right : 3px;
+	right : 17px;
 }
 
 .unimagedbox{
@@ -526,10 +531,10 @@ h3{
  padding : 0;
  margin : 0;
  border : none;
- opacity: .4;  Standards Compliant Browsers 
+ opacity: 0.4; 
  filter: alpha(opacity=40);
- -ms-filter: /*progid:DXImageTransform.Microsoft.Chroma(color='white')*/ "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-  filter: /*progid:DXImageTransform.Microsoft.Chroma(color='white')*/ progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+ /*-ms-filter: progid:DXImageTransform.Microsoft.Chroma(color='white') "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";*/
+  /*filter: /*progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTransform.Microsoft.Alpha(Opacity=40);*/
     zoom : 1;
     
 }
