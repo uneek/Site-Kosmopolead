@@ -2,24 +2,22 @@ $(function() {
 	/* variables */
 	var t;
 
-	$("#tabs_infos").tabs();	
-
-	/* $("#accordion").accordion({
-		collapsible : true,
-		active : false,
-		clearStyle:true,
-		autoHeight : false
-	});*/
-
-	/*$('#accordion').bind('accordionchange', function(event,ui) {
-		$('#accordion h3.ui-state-focus').removeClass('.ui-state-focus');
-	});*/
-              
-	$("#slider").easySlider({
-		auto: true,
-		continuous: true,
-		pause : 4000 
-	});
+	$("#tabs_infos").tabs();
+        if( $("#slider > ul > li").size() < 2){
+		$("#slider").easySlider({
+			auto: false,
+			continuous: false,
+			controlsShow : false,
+			pause : 4000 
+		});
+	}
+	else{    
+		$("#slider").easySlider({
+			auto: true,
+			continuous: true,
+			pause : 4000 
+		});
+	}
 
 	// run the currently selected effect
 	function runEffect() {
@@ -28,8 +26,6 @@ $(function() {
 		var options = {};
 
 		// run the effect
-		//$("#ul_vous-etes").stop();
-		//$( "#ul_vous-etes" ).show( "blind", options, 2000 );
 		clearTimeout(t);
 		$("#ul_vous-etes").show();
                          
@@ -41,7 +37,6 @@ $(function() {
 		var options = {};
 
 		// stop the effect
-		//$( "#ul_vous-etes" ).hide( "blind", options, 2000 );
                 t = setTimeout('$( "#ul_vous-etes" ).hide();', 1000);
 	};
 		
