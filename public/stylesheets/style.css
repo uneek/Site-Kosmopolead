@@ -5,8 +5,8 @@ root{
 html, body {
   font-family: Arial;
   font-size : 12px;
-  background-color : white;
-  color : black;
+  background-color : #FFFFFF;
+  color : #000000;
   padding : 0;
   margin : 0;
   border : none;
@@ -43,8 +43,8 @@ html, body {
 #container {
   font-family: Arial;
   font-size : 12px;
-  background : white;
-  color : black;
+  background : #FFFFFF;
+  color : #000000;
   padding : 0;
   margin-left : auto;
   margin-right : auto;
@@ -54,6 +54,7 @@ html, body {
   width: 990px;
 }
 
+	
 /* Container parts */
 
 
@@ -63,7 +64,7 @@ html, body {
 #page{
   position : relative;
   background : url('/images/ombre_content.png') center repeat-y transparent;
-  color : white;
+  color : #FFFFFF;
   margin-top : 0px;
   margin-bottom : 0px;
   margin-left : auto;
@@ -94,7 +95,7 @@ html, body {
 
 		/* Header, contains banner and menu */
 #header {
-  color : white;
+  color : #FFFFFF;
   margin-top : 0px;
   margin-right : 0px;
   margin-left : 0px;
@@ -112,26 +113,26 @@ html, body {
   margin-left : 0px;
   margin-right : 0px;
   background: url('/images/degrade_page_principale.png') left top repeat-x #FFFFFF;
-  color : black;
+  color : #000000;
   min-height : 390px;
   border-top : solid 1px #FFFFFF;
 }
 
+	/* Content div without background for the "Espace Press" page */
 #content_no_bg {
   margin-left : 0px;
   margin-right : 0px;
   background: #FFFFFF;
-  color : black;
+  color : #000000;
   min-height : 390px;
   border-top : solid 1px #FFFFFF;
-  padding-bottom : 110px;
 }
 
 		/* Footer, bottom of the page, contains sitemap, external links and commercial infos */
 
 #footer {
   background : url('/images/footer.png') repeat-x #1A0F06;
-  color : white;
+  color : #FFFFFF;
   margin-left : 0px;
   margin-right : 0px;
   padding-bottom : 0px;
@@ -142,6 +143,24 @@ html, body {
 }
 
 		/* Header parts */
+
+
+.logo{	
+	width : 372px;
+	height : 73px;
+	margin-bottom : 0;
+}
+
+a.logo_link{
+	color : #000000;
+	text-decoration : none;
+	padding : 0;
+	margin : 0;
+	display : block;
+	width : 372px;
+	height : 73px;
+	margin-left : 30px;
+}
 
 			/* Menu parts */
 
@@ -161,22 +180,65 @@ html, body {
 	padding : 8px 0 0 0;
 }
 
-.logo{	
-	width : 372px;
-	height : 73px;
-	margin-bottom : 0;
+.menu_ul li{
+  text-align : center;
+  position : relative;
+  float : left;
+  display : block;
+  margin : 0 10px 0 20px;
+  padding : 0;
+  height : 19px;
 }
 
-a.logo_link{
-	color : #000000;
-	text-decoration : none;
-	padding : 0;
-	margin : 0;
-	display : block;
-	width : 372px;
-	height : 73px;
-	margin-left : 30px;
+.menu_ul a:link{
+  color : #FFFFFF;
+  text-decoration : none;
+  outline : none;
 }
+
+.menu_ul a:visited{
+  color : #FFFFFF;
+  text-decoration : none;
+  outline : none;
+}
+
+.menu_ul li:hover{
+  border-bottom : #00cfff solid 3px;
+}
+
+.menu_ul li:hover a{
+  color : #00CFFF;
+  outline : none;
+  text-decoration : none;
+}
+
+.menu_ul li:hover ul li a{
+	color : #FFFFFF;
+}
+
+.menu_ul a:active{
+  color : inherit;
+  outline : none;
+  text-decoration : none;
+}
+
+.current{
+  border-bottom : #00cfff solid 3px;
+}
+
+.current a{
+  color : #00cfff !important;
+}
+
+.parent_of_current{
+  border-bottom : #00cfff solid 3px;
+}
+
+.parent_of_current a{
+  color : #00cfff !important;
+}
+
+	/* "Vous êtes" sub-menu */
 
 #ul_vous-etes{
 	position : absolute;
@@ -204,11 +266,11 @@ a.logo_link{
 }
 
 #ul_vous-etes a:link{
-	color : white !important;
+	color : #FFFFFF !important;
 }
 
 #ul_vous-etes a:visited{
-	color : white !important;
+	color : #FFFFFF !important;
 }
 
 #ul_vous-etes li:hover a{
@@ -219,64 +281,7 @@ a.logo_link{
 	color : #00cfff !important;
 }
 
-.menu_ul li{
-  text-align : center;
-  position : relative;
-  float : left;
-  display : block;
-  margin : 0 10px 0 20px;
-  padding : 0;
-  height : 19px;
-}
-
-.menu_ul a:link{
-  color : white;
-  text-decoration : none;
-}
-
-.menu_ul a:visited{
-  color : white;
-  text-decoration : none;
-}
-
-.menu_ul li:hover{
-  border-bottom : #00cfff solid 3px;
-}
-
-.menu_ul li:hover a{
-  color : #00CFFF;
-  text-decoration : none;
-}
-
-.menu_ul li:hover ul li a{
-	color : white;
-}
-
-.menu_ul a:active{
-  color : inherit;
-  text-decoration : none;
-}
-
-.current{
-  border-bottom : #00cfff solid 3px;
-}
-
-.current a{
-  color : #00cfff !important;
-}
-
-.parent_of_current{
-  border-bottom : #00cfff solid 3px;
-}
-
-.parent_of_current a{
-  color : #00cfff !important;
-}
 		/* Content parts */
-
-#accordion{
-	margin-bottom : 5px;
-}
 
 #content a{
 	border : none;
@@ -304,7 +309,6 @@ a.logo_link{
 .para{
   margin-left : 50px;
   margin-right : 50px;
-  /*width : 83%;*/
 }
 
 .para p{
@@ -315,6 +319,7 @@ a.logo_link{
 h3{
   font-size : 13px;
 }
+
 			/* Page d'accueil */
 .central{
   width : 884px;
@@ -423,7 +428,7 @@ h3{
 	border : none;
 	width : 85%;
 	display : block;
-	color : black;
+	color : #000000;
 	background : url('/images/puce_actu.png') left center no-repeat transparent;
 }
 
@@ -488,11 +493,8 @@ h3{
 }
 
 .imagedbox p{
- padding-left : 5px;
- padding-right : 5px;
- font-size : 80%;
  text-align : justify;
- line-height : 150%;
+ line-height : 180%;
 }
 
 .image_entreprises{
@@ -528,17 +530,12 @@ h3{
 .shadow{
  position :absolute;
  height : 30px;
- background-color : black;
+ background-color : #000000;
  width : 270px;
  padding : 0;
  margin : 0;
  border : none;
- opacity: .4;  Standards Compliant Browsers 
- /*   filter: alpha(opacity=40); IE 7 and Earlier 
-     Next 2 lines IE8 
-    filter: progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTransform.Microsoft.Alpha(Opacity=40)"; */
-    
+ opacity: .4;
 }
 
 .title{
@@ -552,7 +549,7 @@ h3{
  text-align : center;
  background-color : transparent;
  width : 270px;
- color : white;
+ color : #FFFFFF;
 }
 
 			/* Page 'L'entreprise' */
@@ -644,12 +641,12 @@ h3{
 
 .press_right {
   float : left;
-  width : 640px;
+  width : 715px;
 }
 
 .press_left {
   float:left;
-  width:300px;
+  width:215px;
   margin-left : 10px;
 }
 
@@ -730,7 +727,7 @@ vertical-align:baseline;
   margin:0;
   padding:0;
   position:absolute;
-  white-space:nowrap;
+  #FFFFFF-space:nowrap;
   width:20000em;
   z-index : 300;
   background: transparent url(../images/gradient_scrollable.png) repeat-x top left;
@@ -845,10 +842,9 @@ vertical-align:baseline;
   margin-left : auto;
   margin-right : auto;
   background-color : transparent;
-  color : white;
+  color : #FFFFFF;
   padding-right : 5px;
   float : left;
-/* height : 100%;*/
   width : 32%;
   font-size : 10px;
 }
@@ -863,10 +859,10 @@ vertical-align:baseline;
   padding-left : 20px;
 }
 
-.footer_div a:link {color:white; text-decoration:none}
-.footer_div a:visited {color:white; text-decoration:none}
+.footer_div a:link {color:#FFFFFF; text-decoration:none}
+.footer_div a:visited {color:#FFFFFF; text-decoration:none}
 .footer_div a:hover {color:#00cfff; text-decoration:none}
-.footer_div a:active {color:white; text-decoration:none}
+.footer_div a:active {color:#FFFFFF; text-decoration:none}
 
 .vsep{
   background-image : url('../images/footer_sep.png');
@@ -919,6 +915,7 @@ vertical-align:baseline;
 	height : 28px;
 	width : 100px;
 	display : block;
+	outline : none;
 }
 
 .link_contact{
