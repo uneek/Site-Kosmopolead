@@ -430,7 +430,8 @@ h3{
 	background : url('/images/puce_actu.png') left center no-repeat transparent;
 }
 
-.actubox ul li a:hover{
+.actubox ul li a:hover p{
+	color : #555555;
 	cursor : pointer;
 }
 
@@ -444,7 +445,14 @@ h3{
 
 .actubox p:first-line{
 	font-size : 11px;
-	color : #00cFFF;
+	font-style : italic;
+	color : #00CFFF;
+}
+
+.actubox p:hover span{
+	font-size : 11px;
+	font-style : italic;
+	color : #00CFFF;
 }
 
 .actubox h2{
@@ -455,7 +463,7 @@ h3{
 .actubox .rss_actu{
 	float : right;
 	position : absolute;
-	top : 693px;
+	top : 660px;
 	right : 17px;
 }
 
@@ -473,7 +481,7 @@ h3{
 .imagedbox{
   float : left;
   width : 270px;
-  height : 313px;
+  height : 280px;
   margin-left : 20px;
   margin-right : 5px;
   background : url('/images/degrade_boite_vousetes.png') repeat-x scroll 0 0  #CECECE;
@@ -546,6 +554,12 @@ h3{
     zoom : 1;
     
 }
+
+.imagedbox:hover .shadow{
+	opacity: 0.6;
+ filter: alpha(opacity=60);
+}
+
 
 .title{
  position :absolute;
@@ -828,19 +842,19 @@ vertical-align:baseline;
 }
 
 .block_link:hover .image_clusters{
- border : solid 1px #00cFFF;
+ border : solid 1px #FFFFFF;
 }
 
 .block_link:hover .image_entreprises{
- border : solid 1px #00cFFF;
+ border : solid 1px #FFFFFF;
 }
 
 .block_link:hover .image_associations{
- border : solid 1px #00cFFF;
+ border : solid 1px #FFFFFF;
 }
 
 .block_link:hover .title{
-	color : #00cFFF;
+	color : #FFFFFF;
 }
 
 

@@ -1,6 +1,4 @@
-root{
-  display:block;
-}
+root{ display:block; }
 
 html, body {
   font-family: Arial;
@@ -292,7 +290,7 @@ a.logo_link{
 #content a:hover{
 	border : none;
 	text-decoration : none;
-	color :  #00cfff;
+	color :  #0095B7;
 	outline : none;
 }
 
@@ -432,6 +430,10 @@ h3{
 	background : url('/images/puce_actu.png') left center no-repeat transparent;
 }
 
+.actubox ul li a:hover p{
+	color : #555555;
+}
+
 .actubox p{
 	position : relative;
 	margin : 0;
@@ -442,18 +444,26 @@ h3{
 
 .actubox p:first-line{
 	font-size : 11px;
-	color : #00cFFF;
+	font-style : italic;
+	color : #00CFFF;
+	
+}
+
+.actubox p:hover::first-line{
+	font-size : 11px;
+	font-style : italic;
+	color : #00CFFF;
 }
 
 .actubox h2{
 	font-size : 8px;
-	color : #00cFFF;
+	color : #0095B7;
 }
 
 .actubox .rss_actu{
 	float : right;
 	position : absolute;
-	top : 693px;
+	top : 660px;
 	right : 17px;
 }
 
@@ -471,7 +481,7 @@ h3{
 .imagedbox{
   float : left;
   width : 270px;
-  height : 313px;
+  height : 280px;
   margin-left : 20px;
   margin-right : 5px;
   background : url('/images/degrade_boite_vousetes.png') repeat-x scroll 0 0  #CECECE;
@@ -536,6 +546,10 @@ h3{
  margin : 0;
  border : none;
  opacity: .4;
+}
+
+.imagedbox:hover .shadow{
+	opacity: .6;
 }
 
 .title{
@@ -620,7 +634,7 @@ h3{
 			/* Page 'Espace presse' */
 
 .press_main a {
-	color : #00cFFF;
+	color : #0095B7;
 }
 #visuels_tab .sliderGallery .slider {top:124px;}
 .press_right .sliderGallery ul{background:transparent url(../images/gradient_scrollable.png) repeat-x scroll left bottom;height:128px;}
@@ -629,9 +643,9 @@ h3{
 .press_left p {font-family:Arial;}
 .press_left p {margin-top:30px;margin-bottom:20px;}
 .press_left .add_comment_block {padding:10px;text-align:left;}
-.press_right h1 {text-align:center;color:#00cfff;margin-bottom:30px;margin-top:20px; background : transparent; padding : 0; font-size : 14px;}
+.press_right h1 {text-align:center;color:#0095B7;margin-bottom:30px;margin-top:20px; background : transparent; padding : 0; font-size : 14px;}
 .press_right p {text-align:justify;}
-.press_right strong {color:#00cfff;font-weight:normal;}
+.press_right strong {color:#0095B7;font-weight:normal;}
 .press_right p ul {list-style-type: circle}
 #big_image {text-align:center;}
 .download_block  {min-height:30px;margin-top:5px;padding-top:5px;text-align:center;background:#fff url(../images/gradient_comments.png) repeat-x top}
@@ -662,9 +676,9 @@ text-transform : uppercase;
 #tabs_infos .ui-tabs-nav li a {padding:2px 10px;font-size : 75%; font-weight : bold;}
 #tabs_infos .ui-tabs-nav li.ui-state-default{background:#eeeeee;}
 #tabs_infos .ui-tabs-nav li.ui-state-active{background:#fff; outline : none; border-bottom-width : 0 !important;}
-#tabs_infos .ui-tabs-nav li.ui-state-active.ui-state-default a {color:#00cfff;}
+#tabs_infos .ui-tabs-nav li.ui-state-active.ui-state-default a {color:#0095B7;}
 #tabs_infos .ui-tabs-nav li.ui-state-default a {color:#333333;}
-#tabs_infos .ui-tabs-nav li.ui-state-active a  {color:#00cfff; outline : none;}
+#tabs_infos .ui-tabs-nav li.ui-state-active a  {color:#0095B7; outline : none;}
 
 .add_comment_block {margin-top:5px;padding-top:5px;text-align:center;background:#fff url(../images/gradient_comments.png) repeat-x top}
 .add_comment_block .title_icon {
@@ -817,19 +831,19 @@ vertical-align:baseline;
 }
 
 .block_link:hover .image_clusters{
- border : solid 1px #00cFFF;
+ border : solid 1px #FFFFFF;
 }
 
 .block_link:hover .image_entreprises{
- border : solid 1px #00cFFF;
+ border : solid 1px #FFFFFF;
 }
 
 .block_link:hover .image_associations{
- border : solid 1px #00cFFF;
+ border : solid 1px #FFFFFF;
 }
 
 .block_link:hover .title{
-	color : #00cFFF;
+	color : #FFFFFF;
 }
 
 
@@ -861,7 +875,7 @@ vertical-align:baseline;
 
 .footer_div a:link {color:#FFFFFF; text-decoration:none}
 .footer_div a:visited {color:#FFFFFF; text-decoration:none}
-.footer_div a:hover {color:#00cfff; text-decoration:none}
+.footer_div a:hover {color:#00cFFF; text-decoration:none}
 .footer_div a:active {color:#FFFFFF; text-decoration:none}
 
 .vsep{

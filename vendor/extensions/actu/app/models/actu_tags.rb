@@ -16,6 +16,6 @@ module ActuTags
 
   tag 'actus:each:actu' do |tag|
     actu = tag.locals.actu
-    %{<li><a href="#{actu.lien}" target="_blank" ><p>#{actu.actu_date}<br />#{actu.contenu}</p></a></li>}
+    %{<li><a href="#{actu.lien}" target="_blank" ><p><span>#{actu.actu_date}</span><br />#{actu.contenu}</p></a></li>}
   end
 end
