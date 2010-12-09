@@ -53,6 +53,8 @@ $(function() {
 
 	$('.ul_actu').jScrollPane();
 
+	$('.ul_actu ul li:last').css('border', 'none');
+
 });
 
 window.onload = function () {
