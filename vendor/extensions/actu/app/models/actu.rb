@@ -1,4 +1,4 @@
 class Actu < ActiveRecord::Base
-   validates :contenu, :presence => true
-   validates :actu_date, :presence => true
+   validates_presence_of :contenu
+   validates_presence_of :actu_date
 end
