@@ -24,7 +24,7 @@
           <%= actu.contenu %>
         </td>
         <td class="remove">
-          <%= link_to image('remove', :alt => 'Supprimer l\'actualité'), remove_admin_actu_url(:id => actu.id) %>
+          <%= link_to 'Supprimer l\'actualité', remove_admin_actu_url(:id => actu.id) %>
         </td>
       </tr>
     <% end %>
@@ -32,4 +32,4 @@
 
 </table>
 
-<p><%= link_to image("actus/new-actu", :alt => "Nouvelle actualité"), {:action => :new} %></p>
+<p><%= link_to "Nouvelle actualité", {:action => :new} %></p>

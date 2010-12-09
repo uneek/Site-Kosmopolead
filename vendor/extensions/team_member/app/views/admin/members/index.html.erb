@@ -21,7 +21,7 @@
           <%= link_to member.nom, edit_admin_member_url(:id => member.id) %>
         </td>
         <td class="remove">
-          <%= link_to image('remove', :alt => 'Supprimer le membre'), remove_admin_member_url(:id => member.id) %>
+          <%= link_to 'Supprimer le membre', remove_admin_member_url(:id => member.id) %>
         </td>
       </tr>
     <% end %>
@@ -29,4 +29,4 @@
 
 </table>
 
-<p><%= link_to image("members/new-member", :alt => "Nouveau membre"), {:action => :new} %></p>
+<p><%= link_to "Nouveau membre", {:action => :new} %></p>

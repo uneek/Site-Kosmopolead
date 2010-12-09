@@ -50,7 +50,11 @@ $(function() {
 			return false;
 		}
 	);
+
+	$('.ul_actu').jScrollPane();
+
 });
+
 window.onload = function () {
      
         var ul = $('div.sliderGallery ul');
@@ -102,6 +106,7 @@ window.onload = function () {
 		// activate item
 		$(".items img").removeClass("active");
 		$(this).addClass("active");
+
 // when page loads simulate a "click" on the first image
 }).filter(":first").click();
 

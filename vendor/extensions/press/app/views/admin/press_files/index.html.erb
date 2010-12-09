@@ -41,7 +41,7 @@
           <%= link_to press_file.nom, edit_admin_press_file_url(:id => press_file.id) %>
         </td>
         <td class="remove">
-          <%= link_to image('remove', :alt => 'Supprimer le fichier'), remove_admin_press_file_url(:id => press_file.id) %>
+          <%= link_to 'Supprimer le fichier', remove_admin_press_file_url(:id => press_file.id) %>
         </td>
       </tr>
     <% end %>
@@ -49,4 +49,4 @@
 
 </table>
 
-<p><!-- <%= link_to image("press_files/new-press_document", :alt => "Nouveau document"), new_admin_press_file_path(:file_type => "document") %> ou --><%= link_to image("press_files/new-press_visual", :alt => "Nouveau visuel"),new_admin_press_file_path(:file_type => "visual") %></p>
+<p><!-- <%= link_to "Nouveau document", new_admin_press_file_path(:file_type => "document") %> ou --><%= link_to image("press_files/new-press_visual", :alt => "Nouveau visuel"),new_admin_press_file_path(:file_type => "visual") %></p>

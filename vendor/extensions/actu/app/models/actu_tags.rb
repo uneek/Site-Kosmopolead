@@ -7,7 +7,7 @@ module ActuTags
 
   tag 'actus:each' do |tag|
     result = []
-    Actu.find(:all, :order => 'id ASC').each do |actu|
+    Actu.find(:all, :order => 'id DESC').each do |actu|
       tag.locals.actu = actu
       result << tag.expand
     end

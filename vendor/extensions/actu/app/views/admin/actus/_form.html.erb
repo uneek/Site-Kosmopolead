@@ -1,4 +1,5 @@
 <% form_for [:admin, @actu], :html => { :multipart => true } do |f|%>
+<%= javascript_include_tag :fckeditor %>
   <div class="form-area">
     <div  id="actu_form_area">
       <p class="date">
@@ -8,7 +9,8 @@
 
       <p class="contenu">
         <label for="actu_contenu">Contenu</label>
-        <%= f.text_area "contenu", :class => 'textbox', :maxlength => 255 %>
+        <%= fckeditor_textarea( "actu" , "contenu", :toolbarSet => 'Simple', :width => '100%', :height => '200px') %>
+        <%#= f.text_area "contenu", :class => 'textbox', :maxlength => 255 %>
       </p>
 
       <p class="lien">

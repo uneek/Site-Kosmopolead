@@ -12,6 +12,6 @@ spec/datasets/tmp
 *.tmproj
 .idea
 rerun.txt
-public/press/*
-public/system/*
-public/assets/*
+public/press
+public/system
+public/assets
