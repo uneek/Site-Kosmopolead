@@ -37,7 +37,7 @@ $(function() {
 		var options = {};
 
 		// stop the effect
-                t = setTimeout('$( "#ul_vous-etes" ).hide();', 1000);
+                t = setTimeout('$( "#ul_vous-etes" ).hide();', 600);
 	};
 		
 	// set effect from select menu value
