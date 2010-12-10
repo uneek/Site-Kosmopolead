@@ -469,11 +469,11 @@ h3{
 .ul_actu{
 	position : absolute;
 	overflow : auto;
-	margin : 5px 0;
+	margin : 10px 0;
 	padding : 0;
 	border : 0;
 	width : 290px;
-	height : 260px;
+	height : 250px;
 }
 
 .unimagedbox{

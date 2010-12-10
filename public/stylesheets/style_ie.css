@@ -470,10 +470,11 @@ h3{
 
 .ul_actu{
 	overflow : auto;
-	margin : 15px 0;
+	margin : 10px 0;
 	padding : 0;
 	border : 0;
 	width : 290px;
+	height : 250px;
 }
 
 .unimagedbox{
