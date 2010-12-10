@@ -24,10 +24,11 @@ html, body {
 	height : 35px;
 	color : #FFFFFF;
 	width : 100%;
-	min-width : 990px;
+	min-width : 965px;
 	margin-left : 0px;
 	margin-right : auto;
 	z-index : 100;
+	padding-left : 25px;
 }
 
 .grey_block{
@@ -469,11 +470,10 @@ h3{
 
 .ul_actu{
 	overflow : auto;
-	margin : 5px 0;
+	margin : 15px 0;
 	padding : 0;
 	border : 0;
 	width : 290px;
-	height : 260px;
 }
 
 .unimagedbox{
@@ -655,6 +655,7 @@ h3{
 	color : #0095B7;
 }
 #visuels_tab .sliderGallery .slider {top:124px;}
+#visuels_tab .sliderGallery ul li:hover{ cursor : pointer} 
 .press_right .sliderGallery ul{background:transparent url(../images/gradient_scrollable.png) repeat-x scroll left bottom;height:128px;}
 .press_left h3 {font-size:13px;font-weight:normal;}
 .press_left .add_comment_block {text-align:left;padding-left:10px;}
@@ -1064,11 +1065,13 @@ h1{
 /* logger parts */
 
 #logger form{
-	text-align : center;
+	/*text-align : center;*/
 	font : arial regular, #CCC, 12px;
 	letter-spacing:2px;
-	margin:0 5px 0 50px;
+	margin:0 auto 0 auto;
+/*	padding-left : 25px;*/
 	text-transform:uppercase;
+	width : 960px;
 }
 
 #logger input{
@@ -1086,6 +1089,7 @@ h1{
 
 #logger .connexion_button{
 	width : 112px;
+	margin-right : 0;
 	height : 20px;
 	border : none;
 	background : url('/images/connexion.png') 0 0 no-repeat;

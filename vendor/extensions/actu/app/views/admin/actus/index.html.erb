@@ -15,10 +15,10 @@
   </thead>
 
   <tbody>
-    <% @actus.each do |actu| %>
+    <% Actu.find(:all, :order => "actu_date DESC, id DESC").each do |actu| %>
       <tr class="node level-1">
         <td class="actu">
-          <%= link_to actu.actu_date, edit_admin_actu_url(:id => actu.id) %>
+          <%= link_to actu.actu_date.strftime('%d-%m-%Y'), edit_admin_actu_url(:id => actu.id) %>
         </td>
         <td>
           <%= actu.contenu %>

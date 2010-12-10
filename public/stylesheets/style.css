@@ -467,6 +467,7 @@ h3{
 }
 
 .ul_actu{
+	position : absolute;
 	overflow : auto;
 	margin : 5px 0;
 	padding : 0;
@@ -645,6 +646,7 @@ h3{
 	color : #0095B7;
 }
 #visuels_tab .sliderGallery .slider {top:124px;}
+#visuels_tab .sliderGallery ul li:hover{ cursor : pointer} 
 .press_right .sliderGallery ul{background:transparent url(../images/gradient_scrollable.png) repeat-x scroll left bottom;height:128px;}
 .press_left h3 {font-size:13px;font-weight:normal;}
 .press_left .add_comment_block {text-align:left;padding-left:10px;}
@@ -1089,6 +1091,7 @@ h1{
 	width : 112px;
 	height : 20px;
 	padding-bottom : 1px;
+	margin-right : 0;
 	border : none;
 	background : url('/images/connexion.png') 0 0 no-repeat;
 }

@@ -4,7 +4,7 @@
     <div  id="actu_form_area">
       <p class="date">
         <label for="actu_date">Date</label>
-        <%= f.date_select "actu_date" %>
+        <%= f.date_select "actu_date", :order => [:day, :month, :year] %>
       </p>
 
       <p class="contenu">
