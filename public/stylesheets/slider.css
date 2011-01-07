@@ -1,6 +1,6 @@
 /* Easy Slider */
 	#slider{
-		margin : 10px 0 0 12px;
+		margin : 15px 0 0 15px;
 	}
 	#slider img{
 		border : none;
@@ -20,7 +20,7 @@
 		width:660px;
 		height:180px;
 		overflow:hidden;
-                margin:15px 0 0 15px;
+               margin : 10px 0 0 12px;
 		}	
 	#prevBtn, #nextBtn,
 	#slider1next, #slider1prev{ 
