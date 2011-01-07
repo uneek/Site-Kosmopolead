@@ -1122,3 +1122,15 @@ letter-spacing:0px;
  margin : 0;
  border : 0;
 }
+
+
+#displaybox {
+	z-index: 10000;
+	filter: alpha(opacity=50); /*older IE*/
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90); /* IE */
+	-moz-opacity: .90; /*older Mozilla*/
+	-khtml-opacity: 0.9;   /*older Safari*/
+	opacity: 0.9;   /*supported by current Mozilla, Safari, and Opera*/
+	background-color:#aaa;
+	position:fixed; top:0px; left:0px; width:100%; height:100%; color:#FFFFFF; text-align:center; vertical-align:middle;
+}
