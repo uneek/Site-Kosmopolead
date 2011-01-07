@@ -1,6 +1,6 @@
 /* Easy Slider */
 	#slider{
-		margin : 10px 0 0 12px;
+		margin : 15px 0 0 15px;
 	}
 	#slider img{
 		border : none;
@@ -17,8 +17,8 @@
 			define width and height of list item (slide)
 			entire slider area will adjust according to the parameters provided here
 		*/ 
-		width:657px;
-		height:160px;
+		width:660px;
+		height:180px;
 		overflow:hidden; 
 		}	
 	#prevBtn, #nextBtn,
