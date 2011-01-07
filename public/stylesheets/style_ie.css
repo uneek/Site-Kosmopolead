@@ -344,12 +344,14 @@ h3{
 }
 
 .central_vsep{
- background-image: url("../images/central_sep.png");
-    float: left;
-    height: 180px;
-    margin-left: 8px;
-    margin-top: 15px;
-    width: 2px;
+  margin-right : 0px;
+  margin-left : 0px;
+  background-image : url('../images/central_sep.png');
+  width : 2px;
+  height : 180px;
+  float : left;
+  margin-top:11px;
+
 }
 
 .temoin{
@@ -399,7 +401,7 @@ h3{
 .actubox{
   float : left;
   width : 290px;
-  height : 305px;
+  height : 430px;
   margin-left : 20px;
   margin-right : 5px;
   background : url('/images/ombre_gauche_actu.png') left center no-repeat #E2DAC3;
@@ -441,7 +443,7 @@ h3{
 	margin : 0;
 	padding : 0;
 	border : none;
-	
+
 }
 
 .actubox p span{
