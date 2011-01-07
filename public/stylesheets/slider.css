@@ -19,7 +19,8 @@
 		*/ 
 		width:660px;
 		height:180px;
-		overflow:hidden; 
+		overflow:hidden;
+                margin:15px 0 0 15px;
 		}	
 	#prevBtn, #nextBtn,
 	#slider1next, #slider1prev{ 
