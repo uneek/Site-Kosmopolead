@@ -41,7 +41,7 @@ module NavigationTags
       @first_set = true
       url = (defined?(SiteLanguage)  && SiteLanguage.count > 0) ? "/#{Locale.language.code}#{root.url}" : root.url
       tree = %{<li#{" class=\"#{css_class.join(" ")}\"" unless css_class.empty?}#{" id=\"" +
-        (root.slug == "/" ? 'home' : root.slug) + "\"" if @ids_for_lis}><a href="#{url}"#{" id=\"link_" + (root.slug == "/" ? 'home' : root.slug) + "\"" if @ids_for_links}>#{escape_once(root.breadcrumb)}</a></li>\n}
+        (root.slug == "/" ? 'home' : root.slug) + "\"" if @ids_for_lis}><a href="#{root.slug}?p=accueil"#{" id=\"link_" + (root.slug == "/" ? 'home' : root.slug) + "\"" if @ids_for_links}>#{escape_once(root.breadcrumb)}</a></li>\n}
     else
       tree = ""
     end
