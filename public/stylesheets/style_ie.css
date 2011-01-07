@@ -344,12 +344,12 @@ h3{
 }
 
 .central_vsep{
-  margin-right : 0px;
-  margin-left : 0px;
-  background-image : url('../images/central_sep.png');
-  width : 2px;
-  height : 180px;
-  float : left;
+ background-image: url("../images/central_sep.png");
+    float: left;
+    height: 180px;
+    margin-left: 8px;
+    margin-top: 15px;
+    width: 2px;
 }
 
 .temoin{
@@ -441,7 +441,7 @@ h3{
 	margin : 0;
 	padding : 0;
 	border : none;
-	width : 90%
+	
 }
 
 .actubox p span{
